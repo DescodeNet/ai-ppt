@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-label="AI PPT sample screenshot">
+  <rect width="1280" height="720" fill="#f4efe5"/>
+  <rect x="56" y="56" width="1168" height="608" rx="28" fill="#fbf8f1" stroke="#cfd8e2"/>
+  <rect x="96" y="96" width="340" height="44" rx="22" fill="#d8e8f3"/>
+  <rect x="96" y="164" width="520" height="72" rx="18" fill="#1e2a34" opacity="0.92"/>
+  <rect x="96" y="266" width="488" height="24" rx="12" fill="#d6dde5"/>
+  <rect x="96" y="304" width="440" height="24" rx="12" fill="#d6dde5"/>
+  <rect x="96" y="342" width="412" height="24" rx="12" fill="#d6dde5"/>
+  <rect x="704" y="164" width="424" height="300" rx="24" fill="#e8f2f8" stroke="#b8cad8"/>
+  <circle cx="820" cy="274" r="64" fill="#2d5f82" opacity="0.8"/>
+  <circle cx="938" cy="322" r="48" fill="#2e7d57" opacity="0.8"/>
+  <circle cx="1024" cy="248" r="40" fill="#8d4a17" opacity="0.75"/>
+  <rect x="96" y="520" width="1032" height="92" rx="20" fill="#efe8db"/>
+  <rect x="126" y="550" width="280" height="18" rx="9" fill="#8293a3"/>
+  <rect x="126" y="580" width="420" height="14" rx="7" fill="#b4c0cb"/>
+</svg>
