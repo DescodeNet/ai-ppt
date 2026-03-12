@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LevelBadge from "../../components/LevelBadge.astro";
+import { sortLessons } from "../../lib/course";
+
+const lessons = sortLessons(await getCollection("lessons"));
+
+const levels: Array<"beginner" | "intermediate" | "advanced"> = ["beginner", "intermediate", "advanced"];
+const levelLabel = {
+  beginner: "초급 트랙",
+  intermediate: "중급 트랙",
+  advanced: "고급 트랙"
+};
+
+const groupedLessons = levels.map((level) => ({
+  level,
+  label: levelLabel[level],
+  entries: lessons.filter((lesson) => lesson.data.level === level)
+}));
+---
+
+<BaseLayout title="강의 목록" currentPath="/lessons">
+  <section class="hero">
+    <h1>강의 트랙</h1>
+    <p class="muted">초급 → 중급 → 고급 순서로 진행합니다. 각 레슨에서 프롬프트를 복사해 바로 실습하세요.</p>
+  </section>
+
+  {
+    groupedLessons.map((group) => (
+      <section>
+        <h2 class="section-title">{group.label}</h2>
+        <div class="card-grid">
+          {group.entries.map((lesson) => (
+              <article class="card">
+                <LevelBadge level={lesson.data.level} />
+                <h3 style="margin-top:0.45rem;">{lesson.data.order}. {lesson.data.title}</h3>
+                <p class="muted">{lesson.data.summary}</p>
+                <div class="pill-row" style="margin-bottom:0.6rem;">
+                  {lesson.data.tools.map((tool) => <span class="pill">{tool}</span>)}
+                </div>
+                <a href={`/lessons/${lesson.slug}`}>레슨 보기</a>
+              </article>
+            ))}
+        </div>
+      </section>
+    ))
+  }
+</BaseLayout>

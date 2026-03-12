@@ -1,0 +1,62 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+type ResourceEntry = CollectionEntry<"resources">;
+
+const resources: ResourceEntry[] = await getCollection("resources");
+const categories = [
+  { key: "font", label: "폰트 다운받기" },
+  { key: "tool", label: "도구" }
+] as const;
+
+const levelText: Record<"beginner" | "intermediate" | "advanced", string> = {
+  beginner: "초급",
+  intermediate: "중급",
+  advanced: "고급"
+};
+
+const groupedResources = categories.map((category) => ({
+  ...category,
+  items: resources
+    .filter((resource) => resource.data.category === category.key)
+    .map((resource) => ({
+      ...resource,
+      levelLabels: resource.data.relatedLevels.map((level) => levelText[level])
+    }))
+}));
+---
+
+<BaseLayout title="리소스" currentPath="/resources">
+  <section class="hero">
+    <h1>리소스</h1>
+    <p class="muted">실습에 필요한 링크를 목적별로 정리했습니다.</p>
+  </section>
+
+  {
+    groupedResources.map((category) => (
+      <section>
+        <h2 class="section-title">{category.label}</h2>
+        <div class="card-grid">
+          {category.items.map((resource) => (
+              <article class="card">
+                <h3>{resource.data.title}</h3>
+                <p class="muted">{resource.data.description}</p>
+                <p class="pill-row">
+                  {resource.levelLabels.map((label) => (
+                    <span class="pill">{label}</span>
+                  ))}
+                </p>
+                {resource.data.category === "font" ? (
+                  <a href={resource.data.url} download class="btn-download">다운로드</a>
+                ) : (
+                  <a href={resource.data.url} target="_blank" rel="noreferrer">링크 열기</a>
+                )}
+              </article>
+            ))}
+        </div>
+      </section>
+    ))
+  }
+</BaseLayout>

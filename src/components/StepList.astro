@@ -1,0 +1,33 @@
+---
+import { marked } from "marked";
+
+interface Step {
+  title?: string;
+  body?: string;
+}
+
+interface Props {
+  steps: Step[];
+}
+
+const { steps } = Astro.props;
+
+const renderedSteps = steps.map((step) => ({
+  ...step,
+  html: marked.parse(step.body ?? "", { async: false }) as string,
+}));
+---
+
+<ol class="step-list">
+  {
+    renderedSteps.map((step, index) => (
+      <li id={`step-${index + 1}`}>
+        <h3 style="margin:0 0 0.4rem; font-size:1rem;">
+          <span class="step-index">{index + 1}</span>
+          {step.title ?? "단계"}
+        </h3>
+        <div class="step-body" set:html={step.html} />
+      </li>
+    ))
+  }
+</ol>

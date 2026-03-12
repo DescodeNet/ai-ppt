@@ -1,0 +1,78 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PromptBlock from "../components/PromptBlock.astro";
+
+type PromptEntry = CollectionEntry<"prompts">;
+
+const prompts: PromptEntry[] = (await getCollection("prompts")).sort(
+  (a, b) => a.data.order - b.data.order
+);
+const promptCards = prompts.map((prompt, index) => ({
+  prompt,
+  index,
+  href: `/lessons/${prompt.data.lessonSlug}`
+}));
+const levelFilters = ["all", "beginner", "intermediate", "advanced"];
+---
+
+<BaseLayout title="프롬프트 라이브러리" currentPath="/prompts">
+  <section class="hero">
+    <h1>프롬프트 라이브러리</h1>
+    <p class="muted">강의에서 사용한 프롬프트를 레벨과 도구 기준으로 모아둔 페이지입니다.</p>
+  </section>
+
+  <div class="filter-row" role="group" aria-label="레벨 필터">
+    {
+      levelFilters.map((level, index) => (
+        <button type="button" data-filter-level={level} aria-pressed={index === 0 ? "true" : "false"}>
+          {level === "all" ? "전체" : level === "beginner" ? "초급" : level === "intermediate" ? "중급" : "고급"}
+        </button>
+      ))
+    }
+  </div>
+
+  <div id="prompt-list">
+    {
+      promptCards.map((entry) => (
+        <article data-prompt-item data-level={entry.prompt.data.level}>
+          <PromptBlock
+            id={`library-prompt-${entry.index + 1}`}
+            title={entry.prompt.data.title}
+            promptText={entry.prompt.body}
+            tools={entry.prompt.data.tools}
+            tags={entry.prompt.data.tags}
+            linkToLesson={entry.href}
+          />
+        </article>
+      ))
+    }
+  </div>
+
+  <script>
+    const filterButtons = document.querySelectorAll("[data-filter-level]");
+    const promptItems = document.querySelectorAll("[data-prompt-item]");
+
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const level = button.getAttribute("data-filter-level");
+        filterButtons.forEach((item) => item.setAttribute("aria-pressed", "false"));
+        button.setAttribute("aria-pressed", "true");
+
+        promptItems.forEach((entry) => {
+          if (!level || level === "all") {
+            entry.removeAttribute("hidden");
+            return;
+          }
+
+          if (entry.getAttribute("data-level") === level) {
+            entry.removeAttribute("hidden");
+          } else {
+            entry.setAttribute("hidden", "hidden");
+          }
+        });
+      });
+    });
+  </script>
+</BaseLayout>

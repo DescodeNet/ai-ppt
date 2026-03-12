@@ -1,0 +1,37 @@
+---
+interface Props {
+  title: string;
+  promptText: string;
+  tools: string[];
+  tags: string[];
+  linkToLesson?: string;
+  id: string;
+}
+
+const { title, promptText, tools, tags, linkToLesson, id } = Astro.props;
+const feedbackId = `${id}-feedback`;
+---
+
+<section class="prompt" data-level>
+  <div class="prompt-head">
+    <div>
+      <strong>{title}</strong>
+      <div class="pill-row" style="margin-top:0.3rem;">
+        {tools.map((tool) => <span class="pill">{tool}</span>)}
+        {tags.map((tag) => <span class="pill">#{tag}</span>)}
+      </div>
+      {
+        linkToLesson && (
+          <a href={linkToLesson} style="font-size:0.83rem;">이 프롬프트가 쓰이는 강의 보기</a>
+        )
+      }
+    </div>
+    <div>
+      <button class="copy-btn" data-copy-button data-copy-target={id} data-copy-feedback={feedbackId} data-state="idle">
+        복사
+      </button>
+      <div id={feedbackId} aria-live="polite" style="font-size:0.75rem; min-height:1.1em; margin-top:0.3rem;"></div>
+    </div>
+  </div>
+  <pre id={id}>{promptText}</pre>
+</section>

@@ -1,0 +1,102 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  currentPath?: string;
+}
+
+const { title, description = "AI PPT 강의 사이트", currentPath = "/" } = Astro.props;
+
+const navItems = [
+  { href: "/", label: "홈" },
+  { href: "/lessons", label: "강의" },
+  { href: "/prompts", label: "프롬프트 라이브러리" },
+  { href: "/resources", label: "리소스" }
+];
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href="/" class="brand"><span class="brand-accent">MetLife</span> AI PPT 강의</a>
+        <nav class="nav" aria-label="주요 메뉴">
+          {
+            navItems.map((item) => (
+              <a href={item.href} aria-current={currentPath === item.href ? "page" : undefined}>{item.label}</a>
+            ))
+          }
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <slot />
+    </main>
+    <footer>
+      <div class="container">
+        &copy; 2026 MetLife AI PPT 강의
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("click", async (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLElement)) {
+          return;
+        }
+
+        const button = target.closest("[data-copy-button]");
+        if (!(button instanceof HTMLButtonElement)) {
+          return;
+        }
+
+        const sourceId = button.dataset.copyTarget;
+        if (!sourceId) {
+          return;
+        }
+
+        const source = document.getElementById(sourceId);
+        const text = source?.textContent;
+        if (!text) {
+          return;
+        }
+
+        const feedbackId = button.dataset.copyFeedback;
+        const feedback = feedbackId ? document.getElementById(feedbackId) : null;
+
+        try {
+          await navigator.clipboard.writeText(text);
+          button.dataset.state = "copied";
+          button.textContent = "복사 완료";
+          if (feedback) {
+            feedback.textContent = "프롬프트를 클립보드에 복사했습니다.";
+          }
+
+          window.setTimeout(() => {
+            button.dataset.state = "idle";
+            button.textContent = "복사";
+            if (feedback) {
+              feedback.textContent = "";
+            }
+          }, 1600);
+        } catch {
+          if (feedback) {
+            feedback.textContent = "복사에 실패했습니다. 직접 선택 후 복사해 주세요.";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

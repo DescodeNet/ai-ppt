@@ -1,0 +1,15 @@
+---
+interface Props {
+  level: "beginner" | "intermediate" | "advanced";
+}
+
+const { level } = Astro.props;
+
+const labelMap = {
+  beginner: "초급",
+  intermediate: "중급",
+  advanced: "고급"
+};
+---
+
+<span class={`level-badge ${level}`}>{labelMap[level]}</span>

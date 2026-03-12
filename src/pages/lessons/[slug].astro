@@ -1,0 +1,117 @@
+---
+import { getCollection } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LevelBadge from "../../components/LevelBadge.astro";
+import PromptBlock from "../../components/PromptBlock.astro";
+import StepList from "../../components/StepList.astro";
+import { sortLessons } from "../../lib/course";
+
+type LessonEntry = CollectionEntry<"lessons">;
+type PromptEntry = CollectionEntry<"prompts">;
+
+export async function getStaticPaths() {
+  const lessons = await getCollection("lessons");
+  return lessons.map((entry: { slug: string }) => ({ params: { slug: entry.slug } }));
+}
+
+const slug = typeof Astro.params.slug === "string" ? Astro.params.slug : "";
+if (slug.length === 0) {
+  throw new Error("slug is required");
+}
+
+const allLessons: LessonEntry[] = sortLessons(await getCollection("lessons"));
+const lesson = allLessons.find((entry) => entry.slug === slug);
+if (!lesson) {
+  throw new Error(`lesson not found: ${slug}`);
+}
+
+const index = allLessons.findIndex((entry) => entry.slug === lesson.slug);
+const prevLesson = index > 0 ? allLessons[index - 1] : null;
+const nextLesson = index >= 0 && index < allLessons.length - 1 ? allLessons[index + 1] : null;
+
+const allPrompts: PromptEntry[] = await getCollection("prompts");
+const promptEntries = lesson.data.promptIds.map((promptSlug: string) => {
+  const matched = allPrompts.find((entry) => entry.slug === promptSlug);
+  if (!matched) {
+    throw new Error(`prompt not found: ${promptSlug}`);
+  }
+  return matched;
+});
+---
+
+<BaseLayout title={`${lesson.data.title} | AI PPT 강의`} currentPath="/lessons">
+  <header class="lesson-header">
+    <div class="pill-row">
+      <LevelBadge level={lesson.data.level} />
+      {lesson.data.tools.map((tool: string) => <span class="pill">{tool}</span>)}
+    </div>
+    <h1 style="margin:0;">{lesson.data.order}. {lesson.data.title}</h1>
+    <p class="muted">{lesson.data.summary}</p>
+  </header>
+
+  {lesson.data.warnings.length > 0 && (
+    <section class="box">
+      <h2 style="margin-top:0;">주의</h2>
+      {lesson.data.warnings.map((warning: string) => <div class="callout warning">{warning}</div>)}
+    </section>
+  )}
+
+  <section class="box" id="prerequisites">
+    <h2 style="margin-top:0;">사전 준비</h2>
+    <ul>
+      {lesson.data.prerequisites.map((item: string) => <li>{item}</li>)}
+    </ul>
+  </section>
+
+  <section class="box" id="steps">
+    <h2 style="margin-top:0;">실습 단계</h2>
+    <StepList steps={lesson.data.steps} />
+  </section>
+
+  <section class="box" id="prompts">
+    <h2 style="margin-top:0;">프롬프트</h2>
+    {
+      promptEntries.map((prompt: PromptEntry, indexPrompt: number) => (
+        <PromptBlock
+          id={`${lesson.slug}-prompt-${indexPrompt + 1}`}
+          title={prompt.data.title}
+          promptText={prompt.body}
+          tools={prompt.data.tools}
+          tags={prompt.data.tags}
+        />
+      ))
+    }
+  </section>
+
+  <section class="box" id="notes">
+    <h2 style="margin-top:0;">노트</h2>
+    {lesson.data.notes.map((note: string) => <div class="callout note">{note}</div>)}
+    <p style="margin-bottom:0;">
+      관련 페이지: <a href="/prompts">프롬프트 라이브러리</a> · <a href="/resources">리소스</a>
+    </p>
+  </section>
+
+  <nav class="lesson-nav" aria-label="이전 다음 레슨">
+    {
+      prevLesson ? (
+        <a href={`/lessons/${prevLesson.slug}`}>
+          이전 레슨<br />
+          <strong>{prevLesson.data.title}</strong>
+        </a>
+      ) : (
+        <div></div>
+      )
+    }
+    {
+      nextLesson ? (
+        <a href={`/lessons/${nextLesson.slug}`}>
+          다음 레슨<br />
+          <strong>{nextLesson.data.title}</strong>
+        </a>
+      ) : (
+        <div></div>
+      )
+    }
+  </nav>
+</BaseLayout>

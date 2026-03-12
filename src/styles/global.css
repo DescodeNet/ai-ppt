@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+
+/* =============================================
+   MetLife 2026 AI PPT — shadcn-inspired Design
+   Brand source: design.metlife.com/korea
+   ============================================= */
+
+:root {
+  /* MetLife Brand */
+  --primary: #0090DA;
+  --primary-hover: #007ABC;
+  --primary-dark: #0061A0;
+  --green: #A4CE4E;
+  --green-soft: #f0f9e8;
+  --yellow-kr: #FFE800;
+
+  /* shadcn Semantic Tokens */
+  --background: #FFFFFF;
+  --foreground: #0f172a;
+  --card: #FFFFFF;
+  --card-foreground: #0f172a;
+  --muted: #f8fafc;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0090DA;
+  --accent: #f1f5f9;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+
+  /* Level Colors — MetLife Derived */
+  --beginner: #16a34a;
+  --beginner-bg: #f0fdf4;
+  --intermediate: #0090DA;
+  --intermediate-bg: #eff8ff;
+  --advanced: #0061A0;
+  --advanced-bg: #e0eef8;
+
+  /* Callouts */
+  --warning-border: #f59e0b;
+  --warning-bg: #fffbeb;
+  --note-border: #0090DA;
+  --note-bg: #eff8ff;
+
+  /* Metrics */
+  --radius: 0.5rem;
+  --radius-lg: 0.75rem;
+  --shadow-sm: 0 1px 2px 0 rgba(0,0,0,0.05);
+  --shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+
+  /* Typography */
+  --font-headline: 'Black Han Sans', sans-serif;
+  --font-body: 'Noto Sans KR', 'Noto Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', 'Courier New', monospace;
+}
+
+/* ============ RESET ============ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--foreground);
+  background: var(--background);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+a:hover {
+  color: var(--primary-hover);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/* ============ LAYOUT ============ */
+
+.container {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  gap: 1rem;
+}
+
+.brand {
+  font-family: var(--font-headline);
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--foreground);
+  letter-spacing: 0.02em;
+}
+
+.brand-accent {
+  color: var(--primary);
+}
+
+.nav {
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--radius);
+  transition: all 0.15s;
+}
+
+.nav a:hover {
+  color: var(--foreground);
+  background: var(--accent);
+}
+
+.nav a[aria-current="page"] {
+  color: var(--primary);
+  background: var(--intermediate-bg);
+}
+
+main {
+  padding: 2rem 0 3rem;
+}
+
+/* ============ HERO ============ */
+
+.hero {
+  background: linear-gradient(135deg, var(--intermediate-bg) 0%, #f0fdf4 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: var(--font-headline);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  color: var(--foreground);
+  letter-spacing: 0.02em;
+}
+
+.hero .muted {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+/* ============ TYPOGRAPHY HELPERS ============ */
+
+.muted {
+  color: var(--muted-foreground);
+  font-size: 0.925rem;
+}
+
+.section-title {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+/* ============ CARDS ============ */
+
+.card-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+.card h3,
+.card h2 {
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+  font-size: 1rem;
+}
+
+.card a:not(.btn-download) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+  transition: gap 0.15s;
+}
+
+.card a:not(.btn-download):hover {
+  gap: 0.5rem;
+}
+
+.card a:not(.btn-download)::after {
+  content: '→';
+}
+
+/* ============ BADGES & PILLS ============ */
+
+.level-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.125rem 0.625rem;
+  letter-spacing: 0.01em;
+}
+
+.level-badge.beginner {
+  background: var(--beginner-bg);
+  color: var(--beginner);
+}
+
+.level-badge.intermediate {
+  background: var(--intermediate-bg);
+  color: var(--intermediate);
+}
+
+.level-badge.advanced {
+  background: var(--advanced-bg);
+  color: var(--advanced);
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+}
+
+.pill {
+  border-radius: 9999px;
+  background: var(--accent);
+  border: 1px solid var(--border);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.125rem 0.5rem;
+  color: var(--muted-foreground);
+}
+
+/* ============ LESSON PAGE ============ */
+
+.lesson-header {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.lesson-header h1 {
+  font-family: var(--font-headline);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.box {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1rem;
+}
+
+.box h2 {
+  font-size: 1.05rem;
+}
+
+/* ============ CALLOUTS ============ */
+
+.callout {
+  border-left: 4px solid;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.callout.warning {
+  background: var(--warning-bg);
+  border-color: var(--warning-border);
+}
+
+.callout.note {
+  background: var(--note-bg);
+  border-color: var(--note-border);
+}
+
+/* ============ STEP LIST ============ */
+
+.step-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.step-list li {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 1rem;
+  transition: border-color 0.15s;
+}
+
+.step-list li:hover {
+  border-color: #cbd5e1;
+}
+
+.step-index {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: var(--primary);
+  color: white;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* ============ TABLE (step body) ============ */
+
+.step-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.875rem;
+}
+
+.step-body th,
+.step-body td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.step-body th {
+  background: var(--muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.step-body tr:hover {
+  background: var(--accent);
+}
+
+.step-body p {
+  margin: 0.5rem 0;
+}
+
+.step-body ol,
+.step-body ul {
+  margin: 0.5rem 0;
+  padding-left: 1.25rem;
+}
+
+/* ============ PROMPT BLOCK ============ */
+
+.prompt {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--card);
+  margin: 0.75rem 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.prompt-head {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  background: var(--muted);
+}
+
+.prompt pre {
+  margin: 0;
+  max-height: 400px;
+  overflow: auto;
+  padding: 1rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  font-family: var(--font-mono);
+  color: var(--foreground);
+  background: var(--card);
+}
+
+.copy-btn {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 0.375rem 0.875rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--foreground);
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.copy-btn:hover {
+  background: var(--accent);
+  border-color: #cbd5e1;
+}
+
+.copy-btn[data-state="copied"] {
+  border-color: var(--beginner);
+  color: var(--beginner);
+  background: var(--beginner-bg);
+}
+
+/* ============ NAVIGATION (Lesson prev/next) ============ */
+
+.lesson-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.lesson-nav a {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 0.875rem 1rem;
+  text-decoration: none;
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--foreground);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.lesson-nav a:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow);
+  color: var(--foreground);
+}
+
+/* ============ FILTER ROW ============ */
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-bottom: 1rem;
+}
+
+.filter-row button {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.825rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--muted-foreground);
+  transition: all 0.15s;
+}
+
+.filter-row button:hover {
+  background: var(--accent);
+  color: var(--foreground);
+}
+
+.filter-row button[aria-pressed="true"] {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* ============ DOWNLOAD BUTTON ============ */
+
+.btn-download,
+.btn-download:visited,
+.btn-download:hover {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.btn-download:hover {
+  background: var(--primary-hover);
+  color: #ffffff;
+}
+
+.btn-download::before {
+  content: "\2913";
+  font-size: 1.1em;
+}
+
+/* ============ FOOTER ============ */
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  color: var(--muted-foreground);
+  font-size: 0.8rem;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 720px) {
+  .site-header .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .lesson-nav {
+    flex-direction: column;
+  }
+}
