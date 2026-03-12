@@ -1,0 +1,34 @@
+{
+  "name": "ai-ppt",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0 --port 4321",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0 --port 4321",
+    "typecheck": "astro check",
+    "test": "playwright test",
+    "test:e2e": "playwright test"
+  },
+  "keywords": [
+    "astro",
+    "lecture",
+    "korean",
+    "prompt-library"
+  ],
+  "author": "",
+  "license": "MIT",
+  "description": "AI PPT lecture website",
+  "dependencies": {
+    "@astrojs/mdx": "^3.1.9",
+    "astro": "^4.16.18",
+    "marked": "^17.0.4",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.7",
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.4.0",
+    "typescript": "^5.9.3"
+  }
+}
