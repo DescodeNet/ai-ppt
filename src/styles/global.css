@@ -565,6 +565,30 @@ footer {
 
 /* ============ TEMPLATE GALLERY ============ */
 
+.tpl-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+  padding: 0.75rem 1rem;
+  background: var(--note-bg);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius);
+  font-size: 0.85rem;
+  color: var(--foreground);
+}
+
+.tpl-banner a {
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--primary);
+}
+
+.tpl-banner a:hover {
+  color: var(--primary-hover);
+}
+
 .tpl-search-wrap {
   max-width: 320px;
   margin: 1.5rem 0 1rem;
