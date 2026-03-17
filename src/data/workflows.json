@@ -1,0 +1,80 @@
+[
+  {
+    "id": "weekly",
+    "name": "주간 미팅",
+    "icon": "📊",
+    "description": "매주 팀 미팅에서 사용할 주간 실적 보고 슬라이드",
+    "fields": [
+      { "id": "performance", "label": "이번 주 실적", "placeholder": "상담 45건, 제안 12건, 체결 3건", "type": "text" },
+      { "id": "comparison", "label": "지난주 대비", "placeholder": "상담 +20%, 체결 -1건", "type": "text" },
+      { "id": "issue", "label": "핵심 이슈", "placeholder": "신상품 A 출시 2주차, 고객 반응 양호", "type": "text" },
+      { "id": "nextGoal", "label": "다음 주 목표", "placeholder": "체결 5건, 신규 상담 50건 목표", "type": "text" }
+    ],
+    "promptTemplate": "보험 영업 팀장으로서 주간 미팅 보고 슬라이드를 만들어주세요.\n\n[주간 실적]\n이번 주: {{performance}}\n지난주 대비: {{comparison}}\n\n[핵심 이슈]\n{{issue}}\n\n[다음 주 목표]\n{{nextGoal}}\n\n각 슬라이드에 핵심 포인트 3개 이하로 정리하고, 실적은 시각적 차트로 표현해주세요."
+  },
+  {
+    "id": "training",
+    "name": "신상품 교육",
+    "icon": "📚",
+    "description": "팀원(FC)을 위한 신상품 교육 자료",
+    "fields": [
+      { "id": "productName", "label": "상품명", "placeholder": "메트라이프 종신보험 플러스", "type": "text" },
+      { "id": "target", "label": "교육 대상", "placeholder": "신입 FC 3명, 경력 6개월 미만", "type": "text" },
+      { "id": "features", "label": "핵심 특징", "placeholder": "무해약환급형, 납입면제, 3대질병 보장", "type": "textarea" },
+      { "id": "competitor", "label": "경쟁사 비교 포인트", "placeholder": "삼성생명 대비 보험료 10% 저렴, 보장 범위 넓음", "type": "textarea" }
+    ],
+    "promptTemplate": "보험 영업 팀장으로서 팀원 교육용 슬라이드를 만들어주세요.\n\n[상품 정보]\n상품명: {{productName}}\n교육 대상: {{target}}\n\n[핵심 특징]\n{{features}}\n\n[경쟁사 비교]\n{{competitor}}\n\n구성: 표지 → 왜 이 상품인가 → 핵심 특징 (3장) → 경쟁사 비교 → 추천 화법 → Q&A\n각 슬라이드에 핵심 키워드와 설명을 간결하게 정리해주세요."
+  },
+  {
+    "id": "recruiting",
+    "name": "리크루팅",
+    "icon": "🤝",
+    "description": "보험설계사 채용 설명회용 발표 자료",
+    "fields": [
+      { "id": "targetAudience", "label": "대상", "placeholder": "30-40대 이직 희망 직장인", "type": "text" },
+      { "id": "income", "label": "수입 구조", "placeholder": "초기 정착지원금 + 수수료, 1년차 평균 4,000만원", "type": "text" },
+      { "id": "careerPath", "label": "경력 경로", "placeholder": "FC → 수석 FC → 팀장 → 지점장", "type": "text" },
+      { "id": "successStory", "label": "성공 사례", "placeholder": "김OO 팀장: 입사 3년차, 연봉 1.2억", "type": "text" }
+    ],
+    "promptTemplate": "보험 영업 팀장으로서 설계사 채용 설명회 슬라이드를 만들어주세요.\n\n[대상]\n{{targetAudience}}\n\n[수입 구조]\n{{income}}\n\n[경력 경로]\n{{careerPath}}\n\n[성공 사례]\n{{successStory}}\n\n구성: 표지 → 보험설계사란? → 수입 구조 → 경력 경로 → 교육/지원 시스템 → 성공 사례 → 하루 일과 → 지원 방법\n매력적이고 전문적인 톤으로 작성해주세요."
+  },
+  {
+    "id": "proposal",
+    "name": "고객 제안서",
+    "icon": "💼",
+    "description": "개별 고객 맞춤형 보장분석 제안 자료",
+    "fields": [
+      { "id": "clientName", "label": "고객명", "placeholder": "홍길동", "type": "text" },
+      { "id": "clientInfo", "label": "고객 정보", "placeholder": "42세 남성, 기혼, 자녀 2명, 직장인", "type": "text" },
+      { "id": "currentInsurance", "label": "현재 보유 보험", "placeholder": "실손보험, 자동차보험만 보유", "type": "text" },
+      { "id": "recommendation", "label": "추천 상품", "placeholder": "종신보험 + CI보험 조합, 월 15만원", "type": "text" }
+    ],
+    "promptTemplate": "보험 영업 팀장으로서 고객 맞춤 보장분석 제안서 슬라이드를 만들어주세요.\n\n[고객 정보]\n고객명: {{clientName}}\n프로필: {{clientInfo}}\n\n[현재 보장 현황]\n{{currentInsurance}}\n\n[추천 상품]\n{{recommendation}}\n\n구성: 표지 → 고객님의 현재 상황 → 보장 갭 분석 (시각화) → 추천 솔루션 → 보장 비교표 → 예상 보험료 → 다음 단계\n고객 눈높이에 맞춰 쉬운 용어로 작성해주세요."
+  },
+  {
+    "id": "morning",
+    "name": "아침 조회",
+    "icon": "☀️",
+    "description": "매일 아침 팀 조회에서 사용할 브리핑 자료",
+    "fields": [
+      { "id": "date", "label": "날짜", "placeholder": "2026년 3월 17일 (월)", "type": "text" },
+      { "id": "yesterdayResult", "label": "어제 실적", "placeholder": "상담 8건, 제안 2건, 체결 1건", "type": "text" },
+      { "id": "todayGoal", "label": "오늘 목표", "placeholder": "상담 10건, 제안 3건 목표", "type": "text" },
+      { "id": "motivation", "label": "동기부여 메시지 (선택)", "placeholder": "이번 주 MVP: 박OO FC, 체결 3건 달성!", "type": "text" }
+    ],
+    "promptTemplate": "보험 영업 팀장으로서 아침 조회 브리핑 슬라이드 5장을 만들어주세요.\n\n[날짜]\n{{date}}\n\n[어제 실적]\n{{yesterdayResult}}\n\n[오늘 목표]\n{{todayGoal}}\n\n[동기부여]\n{{motivation}}\n\n구성: 인사/오늘 날짜 → 어제 실적 요약 → 오늘 목표 → 공지사항/이슈 → 화이팅 메시지\n짧고 에너지 넘치는 톤으로 작성해주세요."
+  },
+  {
+    "id": "monthly",
+    "name": "실적 보고",
+    "icon": "📈",
+    "description": "월간/분기별 팀 실적 보고서",
+    "fields": [
+      { "id": "period", "label": "보고 기간", "placeholder": "2026년 3월", "type": "text" },
+      { "id": "achievement", "label": "목표 대비 달성", "placeholder": "목표 50건 중 38건 달성 (76%)", "type": "text" },
+      { "id": "topPerformers", "label": "우수 성과자", "placeholder": "1위 김OO (12건), 2위 이OO (9건), 3위 박OO (7건)", "type": "text" },
+      { "id": "nextStrategy", "label": "다음 달 전략", "placeholder": "신규 DB 확보, 기존 고객 리텐션 강화", "type": "textarea" }
+    ],
+    "promptTemplate": "보험 영업 팀장으로서 실적 보고 슬라이드를 만들어주세요.\n\n[보고 기간]\n{{period}}\n\n[실적 요약]\n{{achievement}}\n\n[우수 성과자]\n{{topPerformers}}\n\n[다음 달 전략]\n{{nextStrategy}}\n\n구성: 표지 → 월간 실적 요약 (차트) → KPI 대시보드 → 개인별 성과 → 우수 사례 → 이슈/개선점 → 다음 달 목표/전략\n데이터를 시각적으로 표현하고, 경영진 보고에 적합한 톤으로 작성해주세요."
+  }
+]

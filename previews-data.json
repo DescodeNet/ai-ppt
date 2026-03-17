@@ -1,0 +1,1202 @@
+[
+  {
+    "name": "미니멀 젠",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-px\" style=\"background-color: rgb(156, 163, 175);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mt-3 text-[8px]\" style=\"color: rgb(0, 0, 0);\">Less is More</div></div></div>"
+  },
+  {
+    "name": "블랙 & 화이트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute inset-3 border\" style=\"border-color: rgba(255, 255, 255, 0.25);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold\" style=\"color: rgb(255, 255, 255);\">B&amp;W</div></div></div>"
+  },
+  {
+    "name": "노르딕",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(240, 244, 248);\"><div class=\"absolute top-3 left-3 w-6 h-6 rounded-full border-2\" style=\"border-color: rgb(113, 128, 150);\"></div><div class=\"absolute bottom-3 left-3 text-[8px]\" style=\"color: rgb(45, 55, 72);\">Hygge</div></div></div>"
+  },
+  {
+    "name": "와이어프레임",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 32, 44);\"><div class=\"absolute inset-2 border border-dashed\" style=\"border-color: rgb(66, 153, 225);\"></div><div class=\"absolute top-3 left-3 w-4 h-4 border\" style=\"border-color: rgb(66, 153, 225);\"></div><div class=\"absolute bottom-2 right-2 text-[6px] font-mono\" style=\"color: rgb(66, 153, 225);\">[FRAME]</div></div></div>"
+  },
+  {
+    "name": "화이트 페이퍼",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(250, 250, 250);\"><div class=\"absolute top-4 left-4 right-4 h-1 rounded\" style=\"background-color: rgba(55, 65, 81, 0.19);\"></div><div class=\"absolute top-7 left-4 right-8 h-1 rounded\" style=\"background-color: rgba(55, 65, 81, 0.125);\"></div><div class=\"absolute bottom-3 right-3 text-[6px]\" style=\"color: rgb(107, 114, 128);\">p.1</div></div></div>"
+  },
+  {
+    "name": "무인양품",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 245, 240);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded border\" style=\"border-color: rgb(139, 115, 85);\"></div><div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 text-[7px]\" style=\"color: rgb(74, 74, 74);\">無印</div></div></div>"
+  },
+  {
+    "name": "젠 가든",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(247, 246, 243);\"><div class=\"absolute top-4 right-4 w-10 h-10 rounded-full border\" style=\"border-color: rgba(124, 139, 111, 0.376);\"></div><div class=\"absolute bottom-4 left-4 text-[8px] italic\" style=\"color: rgb(44, 44, 44);\">静</div></div></div>"
+  },
+  {
+    "name": "클린 모던",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-10 rounded-lg shadow-md\" style=\"background-color: rgb(255, 255, 255);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-1 rounded\" style=\"background-color: rgb(59, 130, 246);\"></div></div></div>"
+  },
+  {
+    "name": "네온 퓨처",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(5, 5, 5);\"><div class=\"absolute top-2 left-2 w-8 h-8 border\" style=\"border-color: rgb(255, 0, 255);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-mono\" style=\"color: rgb(0, 255, 157); text-shadow: rgb(0, 255, 157) 0px 0px 10px;\">CYBER</div><div class=\"absolute bottom-2 right-2 text-[5px] font-mono\" style=\"color: rgb(255, 0, 255);\">SYS_OK</div></div></div>"
+  },
+  {
+    "name": "스위스 스타일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-0 left-1/3 w-px h-full\" style=\"background-color: rgba(225, 29, 72, 0.19);\"></div><div class=\"absolute top-3 left-3 w-10 h-2\" style=\"background-color: rgb(225, 29, 72);\"></div><div class=\"absolute top-6 left-3 text-[7px] font-bold\" style=\"color: rgb(26, 26, 26);\">SWISS</div></div></div>"
+  },
+  {
+    "name": "글래스모피즘",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(232, 238, 245);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-8 rounded-lg bg-white/40 border border-white/60 flex items-center justify-center\"><span class=\"text-[7px]\" style=\"color: rgb(51, 65, 85);\">Glass</span></div></div></div>"
+  },
+  {
+    "name": "네온 느와르",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 15, 15);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2 py-1 rounded-full text-[8px]\" style=\"color: rgb(244, 63, 94); background-color: rgba(244, 63, 94, 0.125); box-shadow: rgb(244, 63, 94) 0px 0px 15px;\">NEON</div></div></div>"
+  },
+  {
+    "name": "바우하우스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(244, 244, 245);\"><div class=\"absolute top-3 left-3 w-8 h-8 rounded-full bg-red-500\"></div><div class=\"absolute top-8 right-4 w-6 h-6 bg-yellow-400\"></div><div class=\"absolute bottom-3 left-6 w-10 h-2 bg-blue-500\"></div></div></div>"
+  },
+  {
+    "name": "오로라 그라데이션",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 15, 26);\"><div class=\"absolute inset-0 bg-gradient-to-br from-purple-600 via-pink-500 to-blue-500 opacity-80\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-bold text-white\">Aurora</div></div></div>"
+  },
+  {
+    "name": "웹 브루탈리즘",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 0);\"><div class=\"absolute top-3 left-3 right-3 h-6\" style=\"background-color: rgb(255, 0, 0);\"></div><div class=\"absolute bottom-3 left-3 text-[8px] font-bold\" style=\"color: rgb(0, 0, 0);\">RAW</div></div></div>"
+  },
+  {
+    "name": "뉴모피즘",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(224, 229, 236);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-xl\" style=\"background-color: rgb(224, 229, 236); box-shadow: rgb(184, 188, 194) 4px 4px 8px, rgb(255, 255, 255) -4px -4px 8px;\"></div></div></div>"
+  },
+  {
+    "name": "다크 모드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(24, 24, 27);\"><div class=\"absolute top-3 left-3 right-3 h-8 rounded\" style=\"background-color: rgb(39, 39, 42);\"></div><div class=\"absolute bottom-3 right-3 w-3 h-3 rounded-full\" style=\"background-color: rgb(34, 211, 238);\"></div></div></div>"
+  },
+  {
+    "name": "멤피스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 228, 225);\"><div class=\"absolute top-3 right-3 w-6 h-6 rounded-full\" style=\"background-color: rgb(255, 107, 107);\"></div><div class=\"absolute bottom-4 left-4 w-4 h-4\" style=\"background-color: rgb(78, 205, 196);\"></div><div class=\"absolute top-1/2 left-1/3 w-8 h-2\" style=\"background-color: rgb(255, 230, 109);\"></div></div></div>"
+  },
+  {
+    "name": "코퍼레이트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-0 left-0 right-0 h-3\" style=\"background-color: rgb(14, 165, 233);\"></div><div class=\"absolute top-6 left-3 text-[8px] font-semibold\" style=\"color: rgb(15, 23, 42);\">Corporate</div><div class=\"absolute bottom-3 right-3 flex gap-1\"><div class=\"w-2 rounded-t\" style=\"height: 9px; background-color: rgba(14, 165, 233, 0.5);\"></div><div class=\"w-2 rounded-t\" style=\"height: 15px; background-color: rgb(14, 165, 233);\"></div><div class=\"w-2 rounded-t\" style=\"height: 12px; background-color: rgba(14, 165, 233, 0.5);\"></div></div></div></div>"
+  },
+  {
+    "name": "스타트업 피치",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center\"><div class=\"text-[9px] font-bold\" style=\"color: rgb(17, 17, 17);\">$1B</div><div class=\"w-12 h-1 rounded mt-1\" style=\"background-color: rgb(99, 102, 241);\"></div></div></div></div>"
+  },
+  {
+    "name": "파이낸스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(6, 78, 59);\"><div class=\"absolute top-3 left-3 text-[8px] font-bold\" style=\"color: rgb(236, 253, 245);\">+24.5%</div><div class=\"absolute bottom-3 left-3 right-3 flex items-end gap-0.5 h-6\"><div class=\"flex-1 rounded-t\" style=\"height: 40%; background-color: rgba(52, 211, 153, 0.5);\"></div><div class=\"flex-1 rounded-t\" style=\"height: 60%; background-color: rgba(52, 211, 153, 0.5);\"></div><div class=\"flex-1 rounded-t\" style=\"height: 45%; background-color: rgba(52, 211, 153, 0.5);\"></div><div class=\"flex-1 rounded-t\" style=\"height: 80%; background-color: rgb(52, 211, 153);\"></div><div class=\"flex-1 rounded-t\" style=\"height: 55%; background-color: rgba(52, 211, 153, 0.5);\"></div><div class=\"flex-1 rounded-t\" style=\"height: 70%; background-color: rgba(52, 211, 153, 0.5);\"></div></div></div></div>"
+  },
+  {
+    "name": "메디컬 케어",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(240, 249, 255);\"><div class=\"absolute top-3 right-3 text-base\">➕</div><div class=\"absolute bottom-4 left-3 text-[8px]\" style=\"color: rgb(12, 74, 110);\">Medical</div><div class=\"absolute bottom-3 left-3 right-6 h-1 rounded-full\" style=\"background-color: rgba(2, 132, 199, 0.25);\"><div class=\"h-full w-3/4 rounded-full\" style=\"background-color: rgb(2, 132, 199);\"></div></div></div></div>"
+  },
+  {
+    "name": "럭셔리 부동산",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 28, 28);\"><div class=\"absolute top-3 right-3 w-10 h-8 border-2 rounded\" style=\"border-color: rgb(201, 169, 98);\"><div class=\"absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-4 border-t-2 border-l-2 border-r-2 rounded-t\" style=\"border-color: rgb(201, 169, 98);\"></div></div><div class=\"absolute bottom-3 left-3 text-[7px]\" style=\"color: rgb(201, 169, 98);\">LUXURY</div></div></div>"
+  },
+  {
+    "name": "법률 문서",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 254, 245);\"><div class=\"absolute inset-3 border-2\" style=\"border-color: rgba(124, 58, 237, 0.19);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] font-serif\" style=\"color: rgb(31, 41, 55);\">Legal</div></div></div>"
+  },
+  {
+    "name": "컨설팅 리포트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 58, 95);\"><div class=\"absolute top-3 left-3 w-4 h-4 rounded\" style=\"background-color: rgb(0, 180, 216);\"></div><div class=\"absolute top-3 left-8 w-4 h-4 rounded\" style=\"background-color: rgba(0, 180, 216, 0.5);\"></div><div class=\"absolute bottom-3 left-3 text-[7px] font-bold\" style=\"color: rgb(255, 255, 255);\">MATRIX</div></div></div>"
+  },
+  {
+    "name": "테크 기업",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(10, 10, 10);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[12px] font-bold\" style=\"color: rgb(255, 255, 255);\">Tech</div><div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full\" style=\"background-color: rgb(0, 208, 132);\"></div></div></div>"
+  },
+  {
+    "name": "HR/채용",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 244, 255);\"><div class=\"absolute top-3 left-3 flex -space-x-1\"><div class=\"w-4 h-4 rounded-full border-2\" style=\"border-color: rgb(253, 244, 255);\"></div><div class=\"w-4 h-4 rounded-full border-2\" style=\"background-color: rgba(168, 85, 247, 0.125); border-color: rgb(253, 244, 255);\"></div><div class=\"w-4 h-4 rounded-full border-2\" style=\"background-color: rgba(168, 85, 247, 0.25); border-color: rgb(253, 244, 255);\"></div></div><div class=\"absolute bottom-3 left-3 text-[7px]\" style=\"color: rgb(88, 28, 135);\">Team</div></div></div>"
+  },
+  {
+    "name": "리테일/커머스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-3 left-3 px-1.5 py-0.5\" style=\"background-color: rgb(239, 68, 68);\"><span class=\"text-[7px] font-bold text-white\">SALE</span></div><div class=\"absolute bottom-3 right-3 text-[8px] font-bold\" style=\"color: rgb(17, 24, 39);\">50%</div></div></div>"
+  },
+  {
+    "name": "포레스트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(252, 249, 238);\"><div class=\"absolute top-3 left-1/2 -translate-x-1/2 text-base\">🌿</div><div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 text-[7px]\" style=\"color: rgb(44, 62, 46);\">Forest</div></div></div>"
+  },
+  {
+    "name": "딥 스페이스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(2, 6, 23);\"><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 63.3401%; left: 94.3722%; opacity: 0.4233;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 82.044%; left: 50.1269%; opacity: 0.261652;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 23.7002%; left: 97.387%; opacity: 0.940409;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 74.2039%; left: 57.5157%; opacity: 0.922737;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 8.52616%; left: 55.7481%; opacity: 0.694789;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 86.3484%; left: 0.221992%; opacity: 0.749955;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 78.4727%; left: 40.7139%; opacity: 0.373996;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 73.8253%; left: 77.8949%; opacity: 0.419123;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 78.7994%; left: 31.173%; opacity: 0.731017;\"></div><div class=\"absolute w-1 h-1 rounded-full bg-white\" style=\"top: 95.6686%; left: 19.8195%; opacity: 0.901136;\"></div><div class=\"absolute bottom-3 right-3 w-5 h-5 rounded-full bg-gradient-to-br from-violet-400 to-indigo-600\"></div></div></div>"
+  },
+  {
+    "name": "딥 오션",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(12, 74, 110);\"><div class=\"absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/20 to-transparent\"></div><div class=\"absolute bottom-2 right-2 text-base\">🌊</div><div class=\"absolute top-3 left-3 text-[8px]\" style=\"color: rgb(224, 242, 254);\">Deep</div></div></div>"
+  },
+  {
+    "name": "사하라 듄",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 247, 237);\"><svg class=\"absolute bottom-0 left-0 right-0 h-8\" viewBox=\"0 0 100 30\" preserveAspectRatio=\"none\"><path d=\"M0,30 Q25,10 50,20 T100,15 L100,30 Z\" fill=\"#ea580c60\"></path></svg><div class=\"absolute top-3 left-3 text-[8px]\" style=\"color: rgb(124, 45, 18);\">Dune</div></div></div>"
+  },
+  {
+    "name": "오로라",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 23, 42);\"><div class=\"absolute top-0 left-0 right-0 h-1/2 bg-gradient-to-b from-green-400/40 via-purple-500/30 to-transparent\"></div><div class=\"absolute bottom-3 left-3 text-[8px]\" style=\"color: rgb(240, 253, 244);\">Aurora</div></div></div>"
+  },
+  {
+    "name": "보타니컬",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 252, 232);\"><div class=\"absolute top-3 left-3 text-base\">🌱</div><div class=\"absolute bottom-3 right-3 text-[7px] italic\" style=\"color: rgb(132, 204, 22);\">Botanical</div></div></div>"
+  },
+  {
+    "name": "알파인",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(241, 245, 249);\"><svg class=\"absolute bottom-0 left-0 right-0 h-10\" viewBox=\"0 0 100 40\"><polygon points=\"0,40 30,10 50,25 70,5 100,40\" fill=\"#0369A130\"></polygon></svg><div class=\"absolute top-3 left-3 text-[8px] font-bold\" style=\"color: rgb(15, 23, 42);\">ALPINE</div></div></div>"
+  },
+  {
+    "name": "트로피컬",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(236, 253, 245);\"><div class=\"absolute top-2 right-2 text-base\">🌴</div><div class=\"absolute bottom-3 left-3 text-[8px]\" style=\"color: rgb(6, 78, 59);\">Tropical</div><div class=\"absolute bottom-3 right-3 w-3 h-3 rounded-full\" style=\"background-color: rgb(245, 158, 11);\"></div></div></div>"
+  },
+  {
+    "name": "골든 아워",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-3 left-1/2 -translate-x-1/2 w-8 h-px\" style=\"background-color: rgb(212, 175, 55);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] tracking-widest\" style=\"color: rgb(212, 175, 55);\">LUXE</div><div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 text-xs\" style=\"color: rgb(212, 175, 55);\">◆</div></div></div>"
+  },
+  {
+    "name": "보그 에디토리얼",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(249, 250, 251);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[11px] font-serif font-bold\" style=\"color: rgb(24, 24, 27);\">VOGUE</div><div class=\"absolute top-3 right-3 w-3 h-3 rounded-full\" style=\"background-color: rgb(220, 38, 38);\"></div></div></div>"
+  },
+  {
+    "name": "다이아몬드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 27, 75);\"><div class=\"absolute top-3 right-3 w-4 h-4\"><div class=\"w-full h-full rotate-45 border\" style=\"border-color: rgb(192, 132, 252);\"></div></div><div class=\"absolute bottom-3 left-3 text-[7px] tracking-widest\" style=\"color: rgb(224, 231, 255);\">DIAMOND</div></div></div>"
+  },
+  {
+    "name": "샴페인 골드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 251, 235);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(217, 119, 6);\">🥂</div><div class=\"absolute w-1 h-1 rounded-full\" style=\"background-color: rgb(217, 119, 6); top: 46.4007%; left: 53.0694%; opacity: 0.5;\"></div><div class=\"absolute w-1 h-1 rounded-full\" style=\"background-color: rgb(217, 119, 6); top: 55.213%; left: 52.9313%; opacity: 0.5;\"></div><div class=\"absolute w-1 h-1 rounded-full\" style=\"background-color: rgb(217, 119, 6); top: 53.9083%; left: 30.4045%; opacity: 0.5;\"></div><div class=\"absolute w-1 h-1 rounded-full\" style=\"background-color: rgb(217, 119, 6); top: 65.6926%; left: 26.4754%; opacity: 0.5;\"></div><div class=\"absolute w-1 h-1 rounded-full\" style=\"background-color: rgb(217, 119, 6); top: 79.2735%; left: 57.9381%; opacity: 0.5;\"></div></div></div>"
+  },
+  {
+    "name": "누아르",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full\" style=\"background: radial-gradient(circle at 30% 30%, rgb(161, 161, 170), transparent 70%);\"></div><div class=\"absolute bottom-3 left-3 text-[7px] tracking-widest\" style=\"color: rgb(212, 212, 216);\">NOIR</div></div></div>"
+  },
+  {
+    "name": "이탈리안 마블",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 245, 245);\"><div class=\"absolute inset-0 opacity-20\" style=\"background: linear-gradient(45deg, rgba(156, 163, 175, 0.125) 25%, transparent 25%, transparent 75%, rgba(156, 163, 175, 0.125) 75%);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] font-serif\" style=\"color: rgb(31, 41, 55);\">Marble</div></div></div>"
+  },
+  {
+    "name": "신스웨이브",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(46, 16, 101);\"><div class=\"absolute bottom-0 left-0 right-0 h-1/2\" style=\"background: linear-gradient(to top, rgba(34, 211, 238, 0.25), transparent);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-bold\" style=\"color: rgb(240, 171, 252); text-shadow: rgb(34, 211, 238) 2px 2px 0px;\">RETRO</div></div></div>"
+  },
+  {
+    "name": "8비트 아케이드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(24, 24, 27);\"><div class=\"absolute top-3 left-3 grid grid-cols-4 gap-0.5\"><div class=\"w-1.5 h-1.5\" style=\"background-color: rgb(251, 113, 133); opacity: 1;\"></div><div class=\"w-1.5 h-1.5\" style=\"background-color: rgb(74, 222, 128); opacity: 0.5;\"></div><div class=\"w-1.5 h-1.5\" style=\"background-color: rgb(74, 222, 128); opacity: 1;\"></div><div class=\"w-1.5 h-1.5\" style=\"background-color: rgb(251, 113, 133); opacity: 0.5;\"></div><div class=\"w-1.5 h-1.5\" style=\"background-color: rgb(74, 222, 128); opacity: 1;\"></div><div class=\"w-1.5 h-1.5\" style=\"background-color: rgb(74, 222, 128); opacity: 0.5;\"></div><div class=\"w-1.5 h-1.5\" style=\"background-color: rgb(251, 113, 133); opacity: 1;\"></div><div class=\"w-1.5 h-1.5\" style=\"background-color: rgb(74, 222, 128); opacity: 0.5;\"></div></div><div class=\"absolute bottom-2 right-2 text-[6px] font-mono\" style=\"color: rgb(74, 222, 128);\">8-BIT</div></div></div>"
+  },
+  {
+    "name": "Y2K 퓨처",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(224, 231, 255);\"><div class=\"absolute top-3 right-3 w-5 h-5 rounded-full border-2\" style=\"border-color: rgb(236, 72, 153);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-bold\" style=\"color: rgb(67, 56, 202);\">Y2K</div><div class=\"absolute bottom-3 left-3 w-3 h-3\" style=\"background-color: rgba(236, 72, 153, 0.376);\"></div></div></div>"
+  },
+  {
+    "name": "폴라로이드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 254, 245);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 bg-white shadow\"><div class=\"w-full h-8 bg-gray-200\"></div><div class=\"p-1 text-[5px] text-center\" style=\"color: rgb(68, 64, 60);\">memory</div></div></div></div>"
+  },
+  {
+    "name": "재즈 바이닐",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full border-4\" style=\"border-color: rgba(252, 165, 165, 0.25);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full\" style=\"background-color: rgb(248, 113, 113);\"></div></div></div></div>"
+  },
+  {
+    "name": "브루탈 콘크리트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(209, 213, 219);\"><div class=\"absolute inset-2 border-4\" style=\"border-color: rgb(0, 0, 0);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[7px] font-black\" style=\"color: rgb(0, 0, 0);\">CONCRETE</div></div></div>"
+  },
+  {
+    "name": "VHS 글리치",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(13, 13, 13);\"><div class=\"absolute inset-0 opacity-30\" style=\"background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.1) 2px, rgba(255, 255, 255, 0.1) 4px);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-mono\" style=\"color: rgb(255, 255, 255); text-shadow: rgb(255, 0, 0) 2px 0px, rgb(0, 255, 255) -2px 0px;\">VHS</div></div></div>"
+  },
+  {
+    "name": "디스코 70s",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(74, 25, 66);\"><div class=\"absolute top-3 right-3 w-6 h-6 rounded-full\" style=\"background: conic-gradient(gold, silver, gold);\"></div><div class=\"absolute bottom-3 left-3 text-[8px]\" style=\"color: rgb(255, 215, 0);\">DISCO</div></div></div>"
+  },
+  {
+    "name": "빈티지 신문",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 245, 220);\"><div class=\"absolute top-2 left-2 right-2 border-b-2\" style=\"border-color: rgb(26, 26, 26);\"></div><div class=\"absolute top-4 left-2 text-[8px] font-serif font-bold\" style=\"color: rgb(26, 26, 26);\">DAILY</div><div class=\"absolute bottom-3 left-2 right-2 flex gap-1\"><div class=\"flex-1 h-6 border\" style=\"border-color: rgba(26, 26, 26, 0.19);\"></div><div class=\"flex-1 h-6 border\" style=\"border-color: rgba(26, 26, 26, 0.19);\"></div></div></div></div>"
+  },
+  {
+    "name": "사이키델릭",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 107, 53);\"><div class=\"absolute inset-0\" style=\"background: radial-gradient(circle at 30% 70%, rgb(255, 230, 109), rgb(255, 107, 53));\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] font-bold\" style=\"color: rgb(26, 26, 46);\">GROOVY</div></div></div>"
+  },
+  {
+    "name": "아르데코",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 46);\"><div class=\"absolute inset-2 border\" style=\"border-color: rgb(201, 169, 98);\"></div><div class=\"absolute inset-3 border\" style=\"border-color: rgba(201, 169, 98, 0.376);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[7px] tracking-widest\" style=\"color: rgb(201, 169, 98);\">DECO</div></div></div>"
+  },
+  {
+    "name": "폴라로이드 콜라주",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(61, 61, 61);\"><div class=\"absolute w-8 h-10 bg-white shadow\" style=\"top: 8px; left: 10px; transform: rotate(-10deg);\"><div class=\"w-full h-6 bg-gray-300\"></div></div><div class=\"absolute w-8 h-10 bg-white shadow\" style=\"top: 13px; left: 20px; transform: rotate(0deg);\"><div class=\"w-full h-6 bg-gray-300\"></div></div><div class=\"absolute w-8 h-10 bg-white shadow\" style=\"top: 18px; left: 30px; transform: rotate(10deg);\"><div class=\"w-full h-6 bg-gray-300\"></div></div></div></div>"
+  },
+  {
+    "name": "모던 갤러리",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(243, 244, 246);\"><div class=\"absolute top-4 right-4 w-8 h-8 rounded-full\" style=\"background-color: rgba(236, 72, 153, 0.376);\"></div><div class=\"absolute bottom-4 left-4 text-[9px] font-bold italic\" style=\"color: rgb(17, 24, 39);\">ART</div></div></div>"
+  },
+  {
+    "name": "비비드 팝",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(250, 204, 21);\"><div class=\"absolute top-3 right-3 w-5 h-5 rounded-full\" style=\"background-color: rgb(37, 99, 235);\"></div><div class=\"absolute bottom-3 right-6 w-3 h-3\" style=\"background-color: rgb(236, 72, 153);\"></div><div class=\"absolute top-1/2 left-4 text-[10px] font-black\" style=\"color: rgb(0, 0, 0);\">POP</div></div></div>"
+  },
+  {
+    "name": "스트릿 그래피티",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(17, 17, 17);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-black -rotate-3\" style=\"color: rgb(250, 204, 21); text-shadow: rgb(236, 72, 153) 2px 2px 0px;\">STREET</div><div class=\"absolute bottom-2 right-2 text-[8px]\" style=\"color: rgb(236, 72, 153);\">★</div></div></div>"
+  },
+  {
+    "name": "다다 콜라주",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-3 left-3 w-8 h-6 bg-orange-200/80 rotate-3\"></div><div class=\"absolute top-5 left-7 w-6 h-8 bg-yellow-100/80 -rotate-2\"></div><div class=\"absolute bottom-3 right-3 text-[7px] font-mono\" style=\"color: rgb(120, 53, 15);\">cut</div></div></div>"
+  },
+  {
+    "name": "수채화",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 251, 245);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-10 rounded-full opacity-30\" style=\"background-color: rgb(124, 158, 178); filter: blur(8px);\"></div><div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 text-[8px]\" style=\"color: rgb(74, 74, 74); font-family: cursive;\">water</div></div></div>"
+  },
+  {
+    "name": "네온 사인",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 46);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px]\" style=\"color: rgb(255, 107, 107); text-shadow: rgb(255, 107, 107) 0px 0px 10px, rgb(255, 107, 107) 0px 0px 20px; font-family: cursive;\">Open</div></div></div>"
+  },
+  {
+    "name": "리소그래프",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 248, 225);\"><div class=\"absolute top-3 left-3 w-10 h-10 rounded-full\" style=\"background-color: rgb(21, 101, 192); mix-blend-mode: multiply;\"></div><div class=\"absolute top-5 left-5 w-10 h-10 rounded-full\" style=\"background-color: rgb(230, 81, 0); mix-blend-mode: multiply; opacity: 0.5;\"></div></div></div>"
+  },
+  {
+    "name": "추상 미니멀",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(250, 245, 255);\"><div class=\"absolute top-4 right-4 w-8 h-8 rounded-full\" style=\"background-color: rgba(124, 58, 237, 0.25);\"></div><div class=\"absolute bottom-6 left-6 w-12 h-4\" style=\"background-color: rgba(124, 58, 237, 0.376);\"></div></div></div>"
+  },
+  {
+    "name": "아메리칸 코믹",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 245, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-2 py-1 bg-white border-2 rounded\" style=\"border-color: rgb(0, 0, 0);\"><span class=\"text-[8px] font-bold\" style=\"color: rgb(0, 0, 0);\">BOOM!</span></div></div></div>"
+  },
+  {
+    "name": "스티커 팩",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(224, 242, 254);\"><div class=\"absolute text-sm\" style=\"top: 10px; left: 10px;\">😀</div><div class=\"absolute text-sm\" style=\"top: 22px; left: 25px;\">⭐</div><div class=\"absolute text-sm\" style=\"top: 34px; left: 40px;\">❤️</div></div></div>"
+  },
+  {
+    "name": "학술 논문",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 251, 240);\"><div class=\"absolute top-4 left-4 right-4\"><div class=\"text-[8px] font-serif\" style=\"color: rgb(63, 63, 70);\">Abstract</div><div class=\"w-full h-px mt-1\" style=\"background-color: rgb(159, 18, 57);\"></div></div><div class=\"absolute bottom-3 left-4 right-4 h-1\" style=\"background-color: rgba(63, 63, 70, 0.125);\"></div></div></div>"
+  },
+  {
+    "name": "역사 문서",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(229, 229, 229);\"><div class=\"absolute inset-3 border\" style=\"border-color: rgba(120, 53, 15, 0.25);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] font-serif\" style=\"color: rgb(69, 26, 3);\">歷史</div></div></div>"
+  },
+  {
+    "name": "사이언스 랩",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 23, 42);\"><div class=\"absolute top-2 left-2 text-[6px] font-mono\" style=\"color: rgb(34, 211, 238);\">&gt; LAB</div><div class=\"absolute bottom-3 right-3 w-8 h-5 border rounded\" style=\"border-color: rgb(34, 211, 238);\"><div class=\"absolute bottom-0 left-0 right-0 h-1/2\" style=\"background-color: rgba(34, 211, 238, 0.25);\"></div></div></div></div>"
+  },
+  {
+    "name": "수학 공식",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 41, 59);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-mono\" style=\"color: rgb(248, 250, 252);\">∑∞</div></div></div>"
+  },
+  {
+    "name": "학위논문",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-3 left-1/2 -translate-x-1/2 w-8 h-1\" style=\"background-color: rgb(30, 64, 175);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[7px] font-serif text-center\" style=\"color: rgb(31, 41, 55);\">THESIS</div></div></div>"
+  },
+  {
+    "name": "백과사전",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 245, 220);\"><div class=\"absolute top-3 left-3 w-1 h-10\" style=\"background-color: rgb(139, 69, 19);\"></div><div class=\"absolute top-3 left-5 w-1 h-10\" style=\"background-color: rgba(139, 69, 19, 0.376);\"></div><div class=\"absolute bottom-3 right-3 text-[6px]\" style=\"color: rgb(47, 47, 47);\">Vol.1</div></div></div>"
+  },
+  {
+    "name": "선데이 코믹스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 254, 245);\"><div class=\"absolute top-2 left-2 right-2 bottom-2 grid grid-cols-2 gap-0.5\"><div class=\"border\" style=\"border-color: rgba(45, 45, 45, 0.25);\"></div><div class=\"border\" style=\"border-color: rgba(45, 45, 45, 0.25);\"></div><div class=\"border\" style=\"border-color: rgba(45, 45, 45, 0.25);\"></div><div class=\"border\" style=\"border-color: rgba(45, 45, 45, 0.25);\"></div></div></div></div>"
+  },
+  {
+    "name": "애니메이션",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-3 right-3\">✨</div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-bold\" style=\"color: rgb(0, 0, 0);\">アニメ</div></div></div>"
+  },
+  {
+    "name": "클레이 3D",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(241, 245, 249);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full\" style=\"background-color: rgb(129, 140, 248); box-shadow: rgba(0, 0, 0, 0.2) 3px 5px 10px;\"></div></div></div>"
+  },
+  {
+    "name": "로우 폴리",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 41, 59);\"><svg class=\"absolute bottom-2 right-2 w-10 h-10\" viewBox=\"0 0 40 40\"><polygon points=\"20,5 35,35 5,35\" fill=\"#14b8a6\" opacity=\"0.8\"></polygon><polygon points=\"20,10 30,30 10,30\" fill=\"#14b8a6\" opacity=\"0.4\"></polygon></svg></div></div>"
+  },
+  {
+    "name": "치비 캐릭터",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 240, 245);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl\">🥺</div><div class=\"absolute bottom-2 right-2\" style=\"color: rgb(255, 105, 180);\">♡</div></div></div>"
+  },
+  {
+    "name": "웹툰 스타일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-3 left-3 right-3 h-4 border rounded\" style=\"border-color: rgba(0, 0, 0, 0.25);\"></div><div class=\"absolute bottom-3 left-3 right-3 h-4 border rounded\" style=\"border-color: rgba(0, 0, 0, 0.25);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[7px]\" style=\"color: rgb(0, 0, 0);\">웹툰</div></div></div>"
+  },
+  {
+    "name": "두들 낙서",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 254, 245);\"><div class=\"absolute inset-0 opacity-10\" style=\"background-image: repeating-linear-gradient(0deg, transparent, transparent 8px, rgb(204, 204, 204) 8px, rgb(204, 204, 204) 9px);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px]\" style=\"color: rgb(31, 41, 55); font-family: cursive;\">doodle~</div></div></div>"
+  },
+  {
+    "name": "빈티지 카툰",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 246, 227);\"><div class=\"absolute inset-0 opacity-10\" style=\"background-color: rgb(210, 105, 30);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold\" style=\"color: rgb(92, 64, 51);\">TOON</div></div></div>"
+  },
+  {
+    "name": "건축 청사진",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 58, 138);\"><div class=\"absolute inset-2 border border-dashed\" style=\"border-color: rgba(147, 197, 253, 0.376);\"></div><div class=\"absolute top-4 left-4 w-8 h-6 border-2\" style=\"border-color: rgb(147, 197, 253);\"></div><div class=\"absolute bottom-2 right-2 text-[6px] font-mono\" style=\"color: rgb(147, 197, 253);\">A-01</div></div></div>"
+  },
+  {
+    "name": "PCB 회로",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(6, 78, 59);\"><div class=\"absolute top-3 left-3 w-2 h-2 rounded-full\" style=\"background-color: rgb(251, 191, 36);\"></div><div class=\"absolute top-4 left-5 w-6 h-px\" style=\"background-color: rgb(52, 211, 153);\"></div><div class=\"absolute top-4 left-11 w-px h-5\" style=\"background-color: rgb(52, 211, 153);\"></div><div class=\"absolute bottom-3 right-3 w-3 h-3 border\" style=\"border-color: rgb(52, 211, 153);\"></div></div></div>"
+  },
+  {
+    "name": "인포그래픽",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(248, 250, 252);\"><div class=\"absolute bottom-3 left-3 right-3 flex gap-1 items-end h-6\"><div class=\"flex-1 h-full rounded-t\" style=\"background-color: rgba(99, 102, 241, 0.25);\"></div><div class=\"flex-1 h-2/3 rounded-t\" style=\"background-color: rgba(99, 102, 241, 0.44);\"></div><div class=\"flex-1 h-1/2 rounded-t\" style=\"background-color: rgb(99, 102, 241);\"></div></div></div></div>"
+  },
+  {
+    "name": "지형 지도",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-3 left-3 w-3 h-3 rounded-full border-2\" style=\"border-color: rgb(239, 68, 68);\"><div class=\"absolute top-full left-1/2 -translate-x-1/2 w-0.5 h-2\" style=\"background-color: rgb(239, 68, 68);\"></div></div><div class=\"absolute bottom-3 right-3 text-[6px]\" style=\"color: rgb(75, 85, 99);\">MAP</div></div></div>"
+  },
+  {
+    "name": "대시보드 UI",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(17, 24, 39);\"><div class=\"absolute top-3 left-3 right-3 h-6 rounded\" style=\"background-color: rgb(39, 39, 42);\"></div><div class=\"absolute bottom-3 left-3 w-8 h-4 rounded\" style=\"background-color: rgba(16, 185, 129, 0.25);\"></div><div class=\"absolute bottom-3 right-3 w-3 h-3 rounded-full\" style=\"background-color: rgb(16, 185, 129);\"></div></div></div>"
+  },
+  {
+    "name": "코드 에디터",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 30, 30);\"><div class=\"absolute top-3 left-3 text-[6px] font-mono\" style=\"color: rgb(86, 156, 214);\">const</div><div class=\"absolute top-5 left-3 text-[6px] font-mono\" style=\"color: rgb(156, 220, 254);\">x = 42;</div><div class=\"absolute bottom-3 right-3 text-[5px] font-mono\" style=\"color: rgba(212, 212, 212, 0.376);\">main.js</div></div></div>"
+  },
+  {
+    "name": "터미널",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-3 left-3 text-[7px] font-mono\" style=\"color: rgb(0, 255, 0);\">$ run</div><div class=\"absolute top-5 left-3 w-2 h-3\" style=\"background-color: rgb(0, 255, 0); animation: 1s ease 0s infinite normal none running blink;\"></div></div></div>"
+  },
+  {
+    "name": "플로우차트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-4 left-4 w-6 h-4 border rounded\" style=\"border-color: rgb(59, 130, 246);\"></div><div class=\"absolute top-6 left-10 w-4 h-px\" style=\"background-color: rgb(59, 130, 246);\"></div><div class=\"absolute top-4 left-14 w-6 h-4 border rounded\" style=\"border-color: rgb(59, 130, 246);\"></div></div></div>"
+  },
+  {
+    "name": "스케치북",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px]\" style=\"color: rgb(87, 83, 78); font-family: cursive;\">idea!</div><div class=\"absolute bottom-3 right-3 w-6 h-6 border-2 rounded-full\" style=\"border-color: rgb(239, 68, 68); border-style: dashed;\"></div></div></div>"
+  },
+  {
+    "name": "빈티지 타자기",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 245, 220);\"><div class=\"absolute inset-2 border-2\" style=\"border-color: rgba(139, 69, 19, 0.25);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] font-mono\" style=\"color: rgb(74, 74, 74);\">1924</div></div></div>"
+  },
+  {
+    "name": "종이접기",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><svg class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10\" viewBox=\"0 0 40 40\"><polygon points=\"20,5 35,30 5,30\" fill=\"#f97316\"></polygon><polygon points=\"20,5 27,30 20,18\" fill=\"#f97316\" opacity=\"0.6\"></polygon></svg></div></div>"
+  },
+  {
+    "name": "자수 패턴",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 254, 245);\"><div class=\"absolute inset-3 border-2\" style=\"border-color: rgb(220, 38, 38); border-style: dotted;\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[7px]\" style=\"color: rgb(31, 41, 55);\">✿ stitch</div></div></div>"
+  },
+  {
+    "name": "목판화",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 246, 227);\"><div class=\"absolute inset-2 border-2\" style=\"border-color: rgb(139, 0, 0);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold\" style=\"color: rgb(139, 0, 0);\">版</div></div></div>"
+  },
+  {
+    "name": "활판 인쇄",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 245, 240);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold\" style=\"color: rgb(45, 45, 45); text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0px;\">PRESS</div></div></div>"
+  },
+  {
+    "name": "1급 기밀",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(243, 243, 243);\"><div class=\"absolute top-2 left-1/2 -translate-x-1/2 px-1 py-0.5 border text-[5px] font-bold tracking-widest\" style=\"border-color: rgb(255, 0, 0); color: rgb(255, 0, 0);\">TOP SECRET</div><div class=\"absolute bottom-3 left-3 right-3 space-y-1\"><div class=\"h-1 bg-black/60 rounded-sm\"></div><div class=\"h-1 w-2/3 bg-black/40 rounded-sm\"></div></div></div></div>"
+  },
+  {
+    "name": "위험 경고",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(251, 191, 36);\"><div class=\"absolute top-0 left-0 right-0 h-2\" style=\"background-color: rgb(0, 0, 0);\"></div><div class=\"absolute bottom-0 left-0 right-0 h-2\" style=\"background-color: rgb(0, 0, 0);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-xl\">⚠️</div></div></div>"
+  },
+  {
+    "name": "어린이 그림",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-3 right-3\">🌈</div><div class=\"absolute bottom-3 left-3\">⭐</div><div class=\"absolute bottom-3 right-3\">🎨</div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px]\" style=\"color: rgb(0, 0, 0); font-family: cursive;\">꿈</div></div></div>"
+  },
+  {
+    "name": "블루스크린",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 170);\"><div class=\"absolute top-2 left-2 right-2 text-[5px] font-mono\" style=\"color: rgb(255, 255, 255);\">A problem has been detected...</div><div class=\"absolute bottom-2 left-2 text-[6px] font-mono\" style=\"color: rgb(255, 255, 255);\">STOP: 0x00007E</div></div></div>"
+  },
+  {
+    "name": "윈도우 95",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 128, 128);\"><div class=\"absolute top-0 left-0 right-0 h-4 flex items-center px-1 gap-1\" style=\"background-color: rgb(0, 0, 128);\"><div class=\"w-2 h-2\" style=\"background-color: rgb(192, 192, 192);\"></div><span class=\"text-[6px] text-white\">Window</span></div><div class=\"absolute bottom-2 right-2 px-1 py-0.5 text-[6px]\" style=\"background-color: rgb(192, 192, 192);\">OK</div></div></div>"
+  },
+  {
+    "name": "로딩 스크린",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-2 border\" style=\"border-color: rgb(0, 255, 0);\"><div class=\"h-full w-3/4\" style=\"background-color: rgb(0, 255, 0);\"></div></div><div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 text-[6px] font-mono\" style=\"color: rgb(255, 255, 255);\">Loading...</div></div></div>"
+  },
+  {
+    "name": "영수증",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 254, 245);\"><div class=\"absolute top-2 left-1/2 -translate-x-1/2 w-12 border-b border-dashed\" style=\"border-color: rgb(0, 0, 0);\"></div><div class=\"absolute top-4 left-3 text-[5px] font-mono\" style=\"color: rgb(0, 0, 0);\">ITEM......$9.99</div><div class=\"absolute bottom-3 left-3 text-[5px] font-mono\" style=\"color: rgb(0, 0, 0);\">TOTAL....$9.99</div></div></div>"
+  },
+  {
+    "name": "밈 템플릿",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-1/2 -translate-x-1/2 text-[8px] font-bold text-center\" style=\"color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 1px 1px 0px, rgb(255, 255, 255) -1px -1px 0px;\">TOP TEXT</div><div class=\"absolute bottom-2 left-1/2 -translate-x-1/2 text-[8px] font-bold text-center\" style=\"color: rgb(0, 0, 0); text-shadow: rgb(255, 255, 255) 1px 1px 0px, rgb(255, 255, 255) -1px -1px 0px;\">BOTTOM</div></div></div>"
+  },
+  {
+    "name": "대학 강의",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 right-2 h-0.5\" style=\"background-color: rgb(139, 0, 0);\"></div><div class=\"absolute top-5 left-2 text-[7px]\" style=\"color: rgb(30, 58, 95);\">제1장</div><div class=\"absolute bottom-2 right-2 text-[5px]\" style=\"color: rgb(139, 0, 0);\">p.1</div></div></div>"
+  },
+  {
+    "name": "기업 연수",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(248, 250, 252);\"><div class=\"absolute top-2 left-2 w-6 h-2 rounded\" style=\"background-color: rgb(0, 102, 204);\"></div><div class=\"absolute top-6 left-2 text-[6px]\" style=\"color: rgb(15, 23, 42);\">학습목표</div></div></div>"
+  },
+  {
+    "name": "실습 워크샵",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-3 left-3 w-7 h-5 rounded\" style=\"background-color: rgb(254, 240, 138);\"></div><div class=\"absolute top-5 right-4 w-7 h-5 rounded\" style=\"background-color: rgb(254, 202, 202);\"></div></div></div>"
+  },
+  {
+    "name": "온라인 강의",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(24, 24, 27);\"><div class=\"absolute top-2 left-2 w-1 h-8 rounded\" style=\"background-color: rgb(34, 197, 94);\"></div><div class=\"absolute top-3 left-4 text-[7px]\" style=\"color: rgb(255, 255, 255);\">CH.1</div></div></div>"
+  },
+  {
+    "name": "TED 스타일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[9px] font-bold\" style=\"color: rgb(255, 255, 255);\">ONE IDEA</div><div class=\"absolute bottom-2 right-2 w-4 h-1\" style=\"background-color: rgb(235, 0, 40);\"></div></div></div>"
+  },
+  {
+    "name": "칠판 스타일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(45, 71, 57);\"><div class=\"absolute top-3 left-3 text-[8px]\" style=\"color: rgb(255, 255, 255);\">Today</div><div class=\"absolute top-6 left-3 w-10 h-0.5\" style=\"background-color: rgb(255, 224, 102);\"></div></div></div>"
+  },
+  {
+    "name": "플립러닝",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(239, 246, 255);\"><div class=\"absolute top-2 left-2 px-1 rounded text-[5px]\" style=\"background-color: rgb(59, 130, 246); color: rgb(255, 255, 255);\">사전학습</div><div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 text-[8px]\" style=\"color: rgb(30, 64, 175);\">▶</div></div></div>"
+  },
+  {
+    "name": "코딩 부트캠프",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 30, 30);\"><div class=\"absolute top-2 left-2 text-[6px] font-mono\" style=\"color: rgb(86, 156, 214);\">const x</div><div class=\"absolute bottom-2 left-2 text-[5px] font-mono\" style=\"color: rgb(212, 212, 212);\">// code</div></div></div>"
+  },
+  {
+    "name": "키즈 클래스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 247, 237);\"><div class=\"absolute top-2 right-2 text-sm\">⭐</div><div class=\"absolute bottom-2 left-2 text-sm\">📚</div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(154, 52, 18);\">오늘의 학습</div></div></div>"
+  },
+  {
+    "name": "전문 세미나",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(250, 250, 249);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(124, 58, 237);\">SESSION</div><div class=\"absolute bottom-3 left-2 right-2 h-3 rounded\" style=\"background-color: rgba(124, 58, 237, 0.19);\"></div></div></div>"
+  },
+  {
+    "name": "성경 이야기",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 246, 227);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(139, 69, 19);\">✝</div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[7px]\" style=\"color: rgb(92, 64, 51);\">창세기 1장</div></div></div>"
+  },
+  {
+    "name": "교회 예배",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 46);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg\" style=\"color: rgb(255, 215, 0);\">✝</div></div></div>"
+  },
+  {
+    "name": "설교 노트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 254, 247);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(107, 68, 35);\">본문</div><div class=\"absolute top-5 left-2 right-4 h-1 rounded\" style=\"background-color: rgb(44, 44, 44); opacity: 0.3;\"></div><div class=\"absolute top-7 left-2 right-6 h-1 rounded\" style=\"background-color: rgb(44, 44, 44); opacity: 0.3;\"></div></div></div>"
+  },
+  {
+    "name": "성경 공부",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 241, 235);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(123, 85, 68);\">Q.</div><div class=\"absolute bottom-2 left-2 text-[5px]\" style=\"color: rgb(61, 61, 61);\">묵상</div></div></div>"
+  },
+  {
+    "name": "찬양 가사",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(13, 27, 42);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(255, 255, 255);\">♪ 찬양 ♪</div></div></div>"
+  },
+  {
+    "name": "스테인드글라스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 28, 28);\"><div class=\"absolute inset-2 rounded-t-full border-2\" style=\"border-color: rgb(230, 190, 138); opacity: 0.5;\"></div></div></div>"
+  },
+  {
+    "name": "양피지 성경",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(244, 228, 188);\"><div class=\"absolute top-2 left-3 text-[10px]\" style=\"color: rgb(139, 0, 0);\">T</div><div class=\"absolute top-4 left-2 right-2 h-0.5\" style=\"background-color: rgb(74, 55, 40); opacity: 0.3;\"></div></div></div>"
+  },
+  {
+    "name": "묵상 일지",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(250, 248, 245);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[7px]\" style=\"color: rgb(74, 74, 74);\">묵상</div></div></div>"
+  },
+  {
+    "name": "주일학교",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 249, 230);\"><div class=\"absolute top-2 right-2 text-sm\">🌈</div><div class=\"absolute bottom-2 left-2 text-[7px]\" style=\"color: rgb(93, 78, 55);\">주일학교</div></div></div>"
+  },
+  {
+    "name": "절기 (부활/성탄)",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 76, 58);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg\" style=\"color: rgb(255, 215, 0);\">★</div></div></div>"
+  },
+  {
+    "name": "인스타 캐러셀",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 right-2 text-[6px]\" style=\"color: rgb(225, 48, 108);\">1/5</div><div class=\"absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-0.5\"><div class=\"w-1 h-1 rounded-full\" style=\"background-color: rgb(225, 48, 108); opacity: 1;\"></div><div class=\"w-1 h-1 rounded-full\" style=\"background-color: rgb(225, 48, 108); opacity: 0.3;\"></div><div class=\"w-1 h-1 rounded-full\" style=\"background-color: rgb(225, 48, 108); opacity: 0.3;\"></div></div></div></div>"
+  },
+  {
+    "name": "유튜브 썸네일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 0, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-3 rounded\" style=\"background-color: rgb(255, 255, 0);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-[8px]\">▶</div></div></div>"
+  },
+  {
+    "name": "틱톡 스타일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-2 left-1/2 -translate-x-1/2 text-[6px]\" style=\"color: rgb(105, 201, 208);\">TikTok</div></div></div>"
+  },
+  {
+    "name": "링크드인",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(243, 242, 239);\"><div class=\"absolute top-2 left-2 text-[6px] font-bold\" style=\"color: rgb(10, 102, 194);\">in</div><div class=\"absolute top-5 left-2 right-2 h-1 rounded\" style=\"background-color: rgb(0, 0, 0); opacity: 0.2;\"></div></div></div>"
+  },
+  {
+    "name": "트위터/X",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(21, 32, 43);\"><div class=\"absolute top-2 left-2 text-[8px]\" style=\"color: rgb(29, 161, 242);\">𝕏</div></div></div>"
+  },
+  {
+    "name": "핀터레스트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 w-3 h-3 rounded-full\" style=\"background-color: rgb(230, 0, 35);\"></div></div></div>"
+  },
+  {
+    "name": "브런치 매거진",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-3 left-3 right-3 h-0.5\" style=\"background-color: rgb(0, 195, 189);\"></div><div class=\"absolute top-5 left-3 text-[6px]\" style=\"color: rgb(51, 51, 51);\">에세이</div></div></div>"
+  },
+  {
+    "name": "뉴스레터",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(249, 250, 251);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(99, 102, 241);\">📧</div><div class=\"absolute top-5 left-2 right-2 h-1 rounded\" style=\"background-color: rgb(17, 24, 39); opacity: 0.2;\"></div></div></div>"
+  },
+  {
+    "name": "웨딩",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 248, 245);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(212, 175, 55);\">♥</div></div></div>"
+  },
+  {
+    "name": "생일 파티",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 229, 236);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎂</div></div></div>"
+  },
+  {
+    "name": "졸업식",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 35, 126);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎓</div></div></div>"
+  },
+  {
+    "name": "돌잔치",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 245, 230);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(255, 107, 107);\">돌</div></div></div>"
+  },
+  {
+    "name": "기업 행사",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 w-4 h-2 rounded\" style=\"background-color: rgb(37, 99, 235);\"></div><div class=\"absolute bottom-2 left-2 text-[5px]\" style=\"color: rgb(31, 41, 55);\">EVENT</div></div></div>"
+  },
+  {
+    "name": "송년회/신년회",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(12, 12, 30);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(255, 215, 0);\">2025</div></div></div>"
+  },
+  {
+    "name": "세미나 초대",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(248, 250, 252);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(139, 92, 246);\">SEMINAR</div><div class=\"absolute bottom-2 right-2 px-1 rounded text-[4px]\" style=\"background-color: rgb(139, 92, 246); color: rgb(255, 255, 255);\">등록</div></div></div>"
+  },
+  {
+    "name": "전시회",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute inset-3 border\" style=\"border-color: rgb(0, 0, 0); opacity: 0.3;\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[6px]\" style=\"color: rgb(0, 0, 0);\">ART</div></div></div>"
+  },
+  {
+    "name": "여행 가이드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(232, 244, 248);\"><div class=\"absolute top-2 right-2 text-[8px]\">📍</div><div class=\"absolute bottom-2 left-2 text-[6px]\" style=\"color: rgb(231, 76, 60);\">GUIDE</div></div></div>"
+  },
+  {
+    "name": "여행 일지",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 246, 227);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(39, 174, 96);\">Day 1</div><div class=\"absolute bottom-2 right-2 text-[8px]\">✈</div></div></div>"
+  },
+  {
+    "name": "호텔 소개",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 26);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[6px]\" style=\"color: rgb(201, 169, 98);\">★★★★★</div></div></div>"
+  },
+  {
+    "name": "항공사",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 51, 102);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">✈</div></div></div>"
+  },
+  {
+    "name": "국립공원",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(45, 80, 22);\"><div class=\"absolute top-2 left-2 text-sm\">🌲</div><div class=\"absolute bottom-2 right-2 text-sm\">🦌</div></div></div>"
+  },
+  {
+    "name": "시티 투어",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(255, 107, 107);\">CITY</div><div class=\"absolute bottom-2 right-2 text-[8px]\">🏙</div></div></div>"
+  },
+  {
+    "name": "레시피북",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 250, 240);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(230, 126, 34);\">RECIPE</div><div class=\"absolute bottom-2 left-2 text-[5px]\" style=\"color: rgb(74, 74, 74);\">□ 재료</div></div></div>"
+  },
+  {
+    "name": "메뉴판",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 28, 28);\"><div class=\"absolute top-3 left-3 text-[6px]\" style=\"color: rgb(245, 245, 220);\">MENU</div><div class=\"absolute bottom-3 right-3 text-[5px]\" style=\"color: rgb(212, 175, 55);\">$</div></div></div>"
+  },
+  {
+    "name": "카페",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 230, 211);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">☕</div></div></div>"
+  },
+  {
+    "name": "파인 다이닝",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(13, 13, 13);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(184, 134, 11);\">✦</div></div></div>"
+  },
+  {
+    "name": "푸드 블로그",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 right-2 text-[6px]\" style=\"color: rgb(255, 99, 71);\">★★★★</div></div></div>"
+  },
+  {
+    "name": "쿠킹 클래스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 248, 220);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(255, 69, 0);\">Step 1</div><div class=\"absolute bottom-2 left-2 text-sm\">👨‍🍳</div></div></div>"
+  },
+  {
+    "name": "경기 분석",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 46);\"><div class=\"absolute inset-3 border rounded\" style=\"border-color: rgb(0, 255, 135); opacity: 0.3;\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 rounded-full\" style=\"background-color: rgb(0, 255, 135);\"></div></div></div>"
+  },
+  {
+    "name": "팀 소개",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 34, 68);\"><div class=\"absolute top-2 left-1/2 -translate-x-1/2 w-6 h-6 rounded-full border-2\" style=\"border-color: rgb(255, 184, 28);\"></div></div></div>"
+  },
+  {
+    "name": "피트니스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">💪</div></div></div>"
+  },
+  {
+    "name": "골프",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(27, 77, 62);\"><div class=\"absolute bottom-3 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full\" style=\"background-color: rgb(255, 255, 255);\"></div><div class=\"absolute bottom-5 left-1/2 w-0.5 h-3\" style=\"background-color: rgb(240, 230, 140);\"></div></div></div>"
+  },
+  {
+    "name": "러닝",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 107, 53);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🏃</div></div></div>"
+  },
+  {
+    "name": "e스포츠",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(13, 13, 13);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(0, 255, 255);\">VS</div><div class=\"absolute bottom-2 right-2 text-[6px]\" style=\"color: rgb(255, 255, 255);\">🎮</div></div></div>"
+  },
+  {
+    "name": "병원/의료",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px]\" style=\"color: rgb(8, 145, 178);\">+</div></div></div>"
+  },
+  {
+    "name": "요가/명상",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 240, 232);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🧘</div></div></div>"
+  },
+  {
+    "name": "다이어트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(232, 245, 233);\"><div class=\"absolute top-2 left-2 text-sm\">🥗</div><div class=\"absolute bottom-2 right-2 text-[6px]\" style=\"color: rgb(255, 87, 34);\">kcal</div></div></div>"
+  },
+  {
+    "name": "멘탈 케어",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(232, 234, 246);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">💙</div></div></div>"
+  },
+  {
+    "name": "영양 정보",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 253, 231);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(245, 124, 0);\">영양</div><div class=\"absolute bottom-2 right-2 text-sm\">💊</div></div></div>"
+  },
+  {
+    "name": "스파/뷰티",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 242, 248);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🌸</div></div></div>"
+  },
+  {
+    "name": "동화책",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 248, 231);\"><div class=\"absolute top-2 right-2 text-sm\">📖</div><div class=\"absolute bottom-2 left-2 text-sm\">🏰</div></div></div>"
+  },
+  {
+    "name": "유아 교육",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(227, 242, 253);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎨</div></div></div>"
+  },
+  {
+    "name": "알파벳/한글",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-bold\" style=\"color: rgb(76, 175, 80);\">A</div></div></div>"
+  },
+  {
+    "name": "숫자 놀이",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 243, 224);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg font-bold\" style=\"color: rgb(123, 31, 162);\">123</div></div></div>"
+  },
+  {
+    "name": "색칠 공부",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🖍</div></div></div>"
+  },
+  {
+    "name": "어린이 성경",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(232, 245, 233);\"><div class=\"absolute top-2 right-2 text-sm\">🌈</div><div class=\"absolute bottom-2 left-2 text-[6px]\" style=\"color: rgb(255, 152, 0);\">✝</div></div></div>"
+  },
+  {
+    "name": "웨딩 앨범",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute inset-3 border\" style=\"border-color: rgb(212, 175, 55);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(212, 175, 55);\">PHOTO</div></div></div>"
+  },
+  {
+    "name": "가족 사진",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 246, 227);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">👨‍👩‍👧</div></div></div>"
+  },
+  {
+    "name": "사진 포트폴리오",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(10, 10, 10);\"><div class=\"absolute inset-2 bg-zinc-800 rounded\"></div></div></div>"
+  },
+  {
+    "name": "흑백 갤러리",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 26);\"><div class=\"absolute inset-3 border\" style=\"border-color: rgb(255, 255, 255);\"></div></div></div>"
+  },
+  {
+    "name": "필름 카메라",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 240, 225);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(196, 30, 58);\">35mm</div><div class=\"absolute bottom-2 right-2 text-[5px]\" style=\"color: rgb(51, 51, 51);\">FILM</div></div></div>"
+  },
+  {
+    "name": "폴라로이드북",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(249, 246, 240);\"><div class=\"absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6 bg-white border border-zinc-300 rounded-sm\"></div></div></div>"
+  },
+  {
+    "name": "콘서트 포스터",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] font-bold\" style=\"color: rgb(255, 20, 147);\">LIVE</div></div></div>"
+  },
+  {
+    "name": "앨범 아트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 26);\"><div class=\"absolute inset-2 rounded\" style=\"background-color: rgb(99, 102, 241); opacity: 0.3;\"></div></div></div>"
+  },
+  {
+    "name": "뮤지컬",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(44, 7, 53);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎭</div></div></div>"
+  },
+  {
+    "name": "오케스트라",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 28, 28);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎻</div></div></div>"
+  },
+  {
+    "name": "DJ/클럽",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(13, 13, 13);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(0, 255, 255);\">DJ</div><div class=\"absolute bottom-2 right-2 text-sm\">🎧</div></div></div>"
+  },
+  {
+    "name": "버스킹",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 248, 231);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎸</div></div></div>"
+  },
+  {
+    "name": "음악 페스티벌",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 107, 107);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(255, 255, 255);\">FEST</div><div class=\"absolute bottom-2 right-2 text-sm\">🎪</div></div></div>"
+  },
+  {
+    "name": "밴드 소개",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 26);\"><div class=\"absolute top-2 left-2 text-sm\">🎤</div><div class=\"absolute bottom-2 right-2 text-sm\">🥁</div></div></div>"
+  },
+  {
+    "name": "제로 UI",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(0, 0, 0);\">TEXT</div></div></div>"
+  },
+  {
+    "name": "원 컬러",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(232, 232, 232);\"><div class=\"absolute inset-3 rounded\" style=\"background-color: rgb(74, 74, 74); opacity: 0.15;\"></div></div></div>"
+  },
+  {
+    "name": "메타버스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(10, 10, 26);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(168, 85, 247);\">VR</div></div></div>"
+  },
+  {
+    "name": "AI 테크",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 23, 42);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(56, 189, 248);\">AI</div><div class=\"absolute bottom-2 right-2 w-3 h-3 border rounded-full\" style=\"border-color: rgb(56, 189, 248);\"></div></div></div>"
+  },
+  {
+    "name": "ESG 리포트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(34, 197, 94);\">ESG</div><div class=\"absolute bottom-2 right-2 text-sm\">🌱</div></div></div>"
+  },
+  {
+    "name": "브랜드 가이드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(248, 248, 248);\"><div class=\"absolute top-3 left-3 w-3 h-3 rounded-full\" style=\"background-color: rgb(255, 87, 51);\"></div><div class=\"absolute top-3 left-7 w-3 h-3 rounded\" style=\"background-color: rgb(26, 26, 26); opacity: 0.5;\"></div></div></div>"
+  },
+  {
+    "name": "M&A",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(13, 27, 42);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[6px]\" style=\"color: rgb(255, 215, 0);\">M&amp;A</div></div></div>"
+  },
+  {
+    "name": "이사회 보고",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(30, 64, 175);\">안건1</div><div class=\"absolute top-5 left-2 right-4 h-0.5\" style=\"background-color: rgb(31, 41, 55); opacity: 0.3;\"></div></div></div>"
+  },
+  {
+    "name": "캠핑",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(44, 62, 45);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">⛺</div></div></div>"
+  },
+  {
+    "name": "농장",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 246, 227);\"><div class=\"absolute top-2 right-2 text-sm\">🌾</div><div class=\"absolute bottom-2 left-2 text-sm\">🚜</div></div></div>"
+  },
+  {
+    "name": "요트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(12, 35, 64);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">⛵</div></div></div>"
+  },
+  {
+    "name": "프라이빗 제트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 26);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">✈</div></div></div>"
+  },
+  {
+    "name": "카세트 테이프",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(45, 45, 45);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">📼</div></div></div>"
+  },
+  {
+    "name": "필름 느와르",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(13, 13, 13);\"><div class=\"absolute inset-0\" style=\"background: linear-gradient(135deg, transparent 50%, rgba(255, 255, 255, 0.1) 50%);\"></div></div></div>"
+  },
+  {
+    "name": "AI 아트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 46);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(233, 69, 96);\">AI</div><div class=\"absolute bottom-2 right-2 text-[6px]\" style=\"color: rgb(255, 255, 255);\">ART</div></div></div>"
+  },
+  {
+    "name": "제너레이티브",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-2 left-2 text-[5px] font-mono\" style=\"color: rgb(0, 255, 0);\">&lt;/&gt;</div></div></div>"
+  },
+  {
+    "name": "의학 저널",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(0, 119, 182);\">Fig.1</div><div class=\"absolute top-5 left-2 right-4 h-0.5\" style=\"background-color: rgb(26, 54, 93); opacity: 0.3;\"></div></div></div>"
+  },
+  {
+    "name": "특허 문서",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 245);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(26, 26, 26);\">특허</div><div class=\"absolute top-5 left-1/2 w-6 h-4 border\" style=\"border-color: rgb(47, 84, 150);\"></div></div></div>"
+  },
+  {
+    "name": "픽셀 아트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 46);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(255, 107, 107);\">8BIT</div></div></div>"
+  },
+  {
+    "name": "이모티콘",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 235, 59);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg\">😊</div></div></div>"
+  },
+  {
+    "name": "네트워크 다이어그램",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(240, 244, 248);\"><div class=\"absolute top-3 left-3 w-2 h-2 rounded-full\" style=\"background-color: rgb(49, 130, 206);\"></div><div class=\"absolute top-3 right-3 w-2 h-2 rounded-full\" style=\"background-color: rgb(49, 130, 206);\"></div><div class=\"absolute top-4 left-5 right-5 h-0.5\" style=\"background-color: rgb(49, 130, 206); opacity: 0.5;\"></div></div></div>"
+  },
+  {
+    "name": "API 문서",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 30, 30);\"><div class=\"absolute top-2 left-2 text-[5px] font-mono\" style=\"color: rgb(78, 201, 176);\">GET</div><div class=\"absolute top-5 left-2 text-[4px] font-mono\" style=\"color: rgb(212, 212, 212);\">/api</div></div></div>"
+  },
+  {
+    "name": "공장 라인",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(55, 65, 81);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(251, 191, 36);\">⚙</div><div class=\"absolute bottom-2 right-2 text-[6px]\" style=\"color: rgb(249, 250, 251);\">LINE</div></div></div>"
+  },
+  {
+    "name": "물류 창고",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 58, 95);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">📦</div></div></div>"
+  },
+  {
+    "name": "자동차",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 15, 15);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🚗</div></div></div>"
+  },
+  {
+    "name": "반도체",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(12, 18, 34);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(99, 102, 241);\">CHIP</div></div></div>"
+  },
+  {
+    "name": "조선",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(14, 77, 164);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🚢</div></div></div>"
+  },
+  {
+    "name": "항공우주",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(2, 6, 23);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🚀</div></div></div>"
+  },
+  {
+    "name": "에너지 플랜트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(31, 41, 55);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(16, 185, 129);\">⚡</div><div class=\"absolute bottom-2 right-2 text-[6px]\" style=\"color: rgb(243, 244, 246);\">MW</div></div></div>"
+  },
+  {
+    "name": "스마트 팩토리",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(17, 24, 39);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(139, 92, 246);\">IoT</div><div class=\"absolute bottom-2 right-2 text-[6px]\" style=\"color: rgb(255, 255, 255);\">4.0</div></div></div>"
+  },
+  {
+    "name": "아파트 분양",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🏢</div></div></div>"
+  },
+  {
+    "name": "인테리어",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(250, 245, 240);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🛋</div></div></div>"
+  },
+  {
+    "name": "건축 설계",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(248, 250, 252);\"><div class=\"absolute inset-3 border\" style=\"border-color: rgb(100, 116, 139);\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[6px]\" style=\"color: rgb(15, 23, 42);\">설계</div></div></div>"
+  },
+  {
+    "name": "조경",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(236, 253, 245);\"><div class=\"absolute top-2 right-2 text-sm\">🌳</div><div class=\"absolute bottom-2 left-2 text-sm\">🌷</div></div></div>"
+  },
+  {
+    "name": "상업 시설",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(24, 24, 27);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🏬</div></div></div>"
+  },
+  {
+    "name": "오피스 빌딩",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(241, 245, 249);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🏛</div></div></div>"
+  },
+  {
+    "name": "리모델링",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 251, 235);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(120, 53, 15);\">Before</div><div class=\"absolute bottom-2 right-2 text-[5px]\" style=\"color: rgb(245, 158, 11);\">After</div></div></div>"
+  },
+  {
+    "name": "모델하우스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🏠</div></div></div>"
+  },
+  {
+    "name": "법정",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">⚖</div></div></div>"
+  },
+  {
+    "name": "계약서",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 254, 245);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(30, 64, 175);\">제1조</div><div class=\"absolute bottom-3 right-3 text-[6px]\" style=\"color: rgb(31, 41, 55);\">서명</div></div></div>"
+  },
+  {
+    "name": "선거 캠페인",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 58, 138);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold\" style=\"color: rgb(239, 68, 68);\">1</div></div></div>"
+  },
+  {
+    "name": "정책 발표",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(248, 250, 252);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(3, 105, 161);\">정책</div><div class=\"absolute top-5 left-2 right-4 h-0.5\" style=\"background-color: rgb(15, 23, 42); opacity: 0.3;\"></div></div></div>"
+  },
+  {
+    "name": "국회",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 23, 42);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(251, 191, 36);\">국회</div></div></div>"
+  },
+  {
+    "name": "로펌",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(212, 175, 55);\">LAW</div></div></div>"
+  },
+  {
+    "name": "규제 안내",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 242, 242);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px]\" style=\"color: rgb(220, 38, 38);\">⚠</div></div></div>"
+  },
+  {
+    "name": "시민 단체",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(236, 253, 245);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🤝</div></div></div>"
+  },
+  {
+    "name": "패션위크",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(244, 114, 182);\">FW25</div></div></div>"
+  },
+  {
+    "name": "룩북",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(250, 250, 250);\"><div class=\"absolute inset-3 border\" style=\"border-color: rgb(23, 23, 23); opacity: 0.3;\"></div><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[6px]\" style=\"color: rgb(23, 23, 23);\">LOOK</div></div></div>"
+  },
+  {
+    "name": "화장품",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 242, 248);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">💄</div></div></div>"
+  },
+  {
+    "name": "헤어 살롱",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(24, 24, 27);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">✂</div></div></div>"
+  },
+  {
+    "name": "주얼리",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(12, 12, 12);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">💎</div></div></div>"
+  },
+  {
+    "name": "스트리트 패션",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(24, 24, 27);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] font-bold\" style=\"color: rgb(239, 68, 68);\">DROP</div></div></div>"
+  },
+  {
+    "name": "K-뷰티",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 241, 242);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">✨</div></div></div>"
+  },
+  {
+    "name": "향수",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(161, 98, 7);\">EDP</div></div></div>"
+  },
+  {
+    "name": "탄소 중립",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(2, 44, 34);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(16, 185, 129);\">CO₂</div><div class=\"absolute bottom-2 right-2 text-[6px]\" style=\"color: rgb(236, 253, 245);\">ZERO</div></div></div>"
+  },
+  {
+    "name": "재활용",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(240, 253, 244);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">♻</div></div></div>"
+  },
+  {
+    "name": "신재생 에너지",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(12, 74, 110);\"><div class=\"absolute top-2 right-2 text-sm\">☀</div><div class=\"absolute bottom-2 left-2 text-sm\">💨</div></div></div>"
+  },
+  {
+    "name": "기후 변화",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 58, 138);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🌍</div></div></div>"
+  },
+  {
+    "name": "친환경 포장",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🌿</div></div></div>"
+  },
+  {
+    "name": "지속 가능",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(5, 150, 105);\">SDGs</div></div></div>"
+  },
+  {
+    "name": "그린 테크",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 23, 42);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(74, 222, 128);\">GREEN</div><div class=\"absolute bottom-2 right-2 text-[5px]\" style=\"color: rgb(240, 253, 244);\">TECH</div></div></div>"
+  },
+  {
+    "name": "해양 보호",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(3, 105, 161);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🐋</div></div></div>"
+  },
+  {
+    "name": "반려동물",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 247, 237);\"><div class=\"absolute top-2 right-2 text-sm\">🐕</div><div class=\"absolute bottom-2 left-2 text-sm\">🐈</div></div></div>"
+  },
+  {
+    "name": "동물 병원",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(240, 253, 250);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px]\" style=\"color: rgb(20, 184, 166);\">+</div><div class=\"absolute bottom-2 right-2 text-sm\">🐾</div></div></div>"
+  },
+  {
+    "name": "펫샵",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 251, 235);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🦴</div></div></div>"
+  },
+  {
+    "name": "동물 보호",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 242, 248);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🏠</div><div class=\"absolute bottom-2 right-2 text-sm\">❤</div></div></div>"
+  },
+  {
+    "name": "야생 동물",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(20, 83, 45);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🦁</div></div></div>"
+  },
+  {
+    "name": "아쿠아리움",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(12, 74, 110);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🐠</div></div></div>"
+  },
+  {
+    "name": "농장 동물",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-2 right-2 text-sm\">🐄</div><div class=\"absolute bottom-2 left-2 text-sm\">🐔</div></div></div>"
+  },
+  {
+    "name": "펫 푸드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🥣</div></div></div>"
+  },
+  {
+    "name": "프랜차이즈",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(220, 38, 38);\">FC</div><div class=\"absolute bottom-2 right-2 text-sm\">🏪</div></div></div>"
+  },
+  {
+    "name": "스몰 비즈니스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🛍</div></div></div>"
+  },
+  {
+    "name": "공급망",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 58, 95);\"><div class=\"absolute top-2 left-2 w-2 h-2 rounded-full\" style=\"background-color: rgb(34, 211, 238);\"></div><div class=\"absolute top-2 right-2 w-2 h-2 rounded-full\" style=\"background-color: rgb(34, 211, 238);\"></div><div class=\"absolute top-3 left-4 right-4 h-0.5\" style=\"background-color: rgb(34, 211, 238); opacity: 0.5;\"></div></div></div>"
+  },
+  {
+    "name": "애자일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(243, 232, 255);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(168, 85, 247);\">SPRINT</div></div></div>"
+  },
+  {
+    "name": "OKR",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(37, 99, 235);\">OKR</div><div class=\"absolute bottom-2 right-2 text-[6px]\" style=\"color: rgb(15, 23, 42);\">✓</div></div></div>"
+  },
+  {
+    "name": "분기 보고",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(248, 250, 252);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(14, 165, 233);\">Q1</div><div class=\"absolute top-5 left-2 right-4 h-2 rounded\" style=\"background-color: rgb(14, 165, 233); opacity: 0.3;\"></div></div></div>"
+  },
+  {
+    "name": "STEM 교육",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 23, 42);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(34, 211, 238);\">STEM</div><div class=\"absolute bottom-2 right-2 text-sm\">🔬</div></div></div>"
+  },
+  {
+    "name": "언어 학습",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(239, 246, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px]\" style=\"color: rgb(59, 130, 246);\">ABC</div></div></div>"
+  },
+  {
+    "name": "역사 수업",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">📜</div></div></div>"
+  },
+  {
+    "name": "미술 수업",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎨</div></div></div>"
+  },
+  {
+    "name": "음악 수업",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎵</div></div></div>"
+  },
+  {
+    "name": "체육 수업",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(220, 252, 231);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">⚽</div></div></div>"
+  },
+  {
+    "name": "스레드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 0, 0);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold\" style=\"color: rgb(255, 255, 255);\">@</div></div></div>"
+  },
+  {
+    "name": "비핸스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(0, 87, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold\" style=\"color: rgb(255, 255, 255);\">Bē</div></div></div>"
+  },
+  {
+    "name": "드리블",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(249, 245, 241);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full\" style=\"background-color: rgb(234, 76, 137);\"></div></div></div>"
+  },
+  {
+    "name": "노션 스타일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(55, 53, 47);\">□ Todo</div><div class=\"absolute top-5 left-2 text-[6px]\" style=\"color: rgb(235, 87, 87);\">☑ Done</div></div></div>"
+  },
+  {
+    "name": "런칭 파티",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 15, 15);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎉</div></div></div>"
+  },
+  {
+    "name": "시상식",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🏆</div></div></div>"
+  },
+  {
+    "name": "박람회",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 58, 138);\"><div class=\"absolute top-2 left-2 text-[5px]\" style=\"color: rgb(251, 191, 36);\">EXPO</div><div class=\"absolute bottom-2 right-2 text-sm\">🎪</div></div></div>"
+  },
+  {
+    "name": "팝업 스토어",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 244, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[7px]\" style=\"color: rgb(217, 70, 239);\">POP-UP</div></div></div>"
+  },
+  {
+    "name": "크루즈",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(12, 74, 110);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🛳</div></div></div>"
+  },
+  {
+    "name": "백패킹",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(54, 83, 20);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎒</div></div></div>"
+  },
+  {
+    "name": "글램핑",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">⛺</div></div></div>"
+  },
+  {
+    "name": "테마파크",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(124, 58, 237);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎢</div></div></div>"
+  },
+  {
+    "name": "베이커리",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🥐</div></div></div>"
+  },
+  {
+    "name": "바/칵테일",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🍸</div></div></div>"
+  },
+  {
+    "name": "비건",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(236, 253, 245);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🥗</div></div></div>"
+  },
+  {
+    "name": "밀키트",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🍱</div></div></div>"
+  },
+  {
+    "name": "필라테스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(245, 243, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(139, 92, 246);\">PILATES</div></div></div>"
+  },
+  {
+    "name": "한의원",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px]\" style=\"color: rgb(146, 64, 14);\">韓</div></div></div>"
+  },
+  {
+    "name": "치과",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(240, 249, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🦷</div></div></div>"
+  },
+  {
+    "name": "안과",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(255, 255, 255);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">👁</div></div></div>"
+  },
+  {
+    "name": "수영",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(8, 145, 178);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🏊</div></div></div>"
+  },
+  {
+    "name": "테니스",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(22, 101, 52);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎾</div></div></div>"
+  },
+  {
+    "name": "스키",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 58, 138);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">⛷</div></div></div>"
+  },
+  {
+    "name": "격투기",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 15, 15);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🥊</div></div></div>"
+  },
+  {
+    "name": "힙합",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 15, 15);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px] font-bold\" style=\"color: rgb(251, 191, 36);\">HIP HOP</div></div></div>"
+  },
+  {
+    "name": "인디 밴드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(253, 246, 227);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(234, 88, 12);\">INDIE</div></div></div>"
+  },
+  {
+    "name": "클래식",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(28, 25, 23);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🎻</div></div></div>"
+  },
+  {
+    "name": "국악",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[10px]\" style=\"color: rgb(185, 28, 28);\">國</div></div></div>"
+  },
+  {
+    "name": "홀로그램",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 15, 15);\"><div class=\"absolute inset-2 rounded\" style=\"background: linear-gradient(135deg, rgba(255, 0, 255, 0.25), rgba(0, 255, 255, 0.25), rgba(255, 255, 0, 0.25));\"></div></div></div>"
+  },
+  {
+    "name": "3D 렌더링",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(26, 26, 46);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(99, 102, 241);\">3D</div></div></div>"
+  },
+  {
+    "name": "모션 그래픽",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(24, 24, 27);\"><div class=\"absolute top-2 left-2 text-[6px]\" style=\"color: rgb(249, 115, 22);\">▶</div><div class=\"absolute bottom-2 right-2 text-[5px]\" style=\"color: rgb(255, 255, 255);\">MOTION</div></div></div>"
+  },
+  {
+    "name": "AR/VR",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 23, 42);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[8px]\" style=\"color: rgb(139, 92, 246);\">XR</div></div></div>"
+  },
+  {
+    "name": "데이터센터",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(15, 23, 42);\"><div class=\"absolute top-2 left-2 w-2 h-6 rounded\" style=\"background-color: rgb(34, 211, 238); opacity: 0.5;\"></div><div class=\"absolute top-2 left-5 w-2 h-6 rounded\" style=\"background-color: rgb(34, 211, 238); opacity: 0.5;\"></div></div></div>"
+  },
+  {
+    "name": "클라우드",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(30, 64, 175);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">☁</div></div></div>"
+  },
+  {
+    "name": "사이버 보안",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(13, 13, 13);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">🔒</div></div></div>"
+  },
+  {
+    "name": "IoT",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(240, 253, 244);\"><div class=\"absolute top-2 left-3 w-1.5 h-1.5 rounded-full\" style=\"background-color: rgb(16, 185, 129);\"></div><div class=\"absolute top-4 right-3 w-1.5 h-1.5 rounded-full\" style=\"background-color: rgb(16, 185, 129);\"></div><div class=\"absolute bottom-3 left-5 w-1.5 h-1.5 rounded-full\" style=\"background-color: rgb(16, 185, 129);\"></div></div></div>"
+  },
+  {
+    "name": "불교",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(254, 243, 199);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">☸</div></div></div>"
+  },
+  {
+    "name": "이슬람",
+    "previewHTML": "<div class=\"transition-transform group-hover:scale-[1.03]\"><div class=\"aspect-video rounded-lg overflow-hidden relative pointer-events-none\" style=\"background-color: rgb(6, 78, 59);\"><div class=\"absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-sm\">☪</div></div></div>"
+  }
+]

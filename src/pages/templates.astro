@@ -1,0 +1,570 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import allData from "../data/templates.json";
+
+const categoryOrder = [
+  '심플','모던','비즈니스','내추럴','럭셔리','레트로','크리에이티브',
+  '학술','카툰','테크니컬','크래프트','재미','강의교안','종교',
+  '소셜미디어','이벤트','여행','음식','스포츠','건강/웰빙',
+  '키즈','포토','뮤직/공연','산업/제조','부동산/건축','법률/정치',
+  '패션/뷰티','환경/ESG','펫/동물',
+];
+
+const templates = allData
+  .sort((a, b) => {
+    const ai = categoryOrder.indexOf(a.category);
+    const bi = categoryOrder.indexOf(b.category);
+    if (ai !== bi) return ai - bi;
+    return a.name.localeCompare(b.name, 'ko');
+  });
+
+const catMap = new Map<string, number>();
+for (const t of templates) {
+  catMap.set(t.category, (catMap.get(t.category) || 0) + 1);
+}
+const categories = categoryOrder
+  .filter((c) => catMap.has(c))
+  .map((name) => ({ name, count: catMap.get(name)! }));
+---
+
+<BaseLayout title="NotebookLM 슬라이드 템플릿" currentPath="/templates">
+  <section class="hero">
+    <h1>NotebookLM 슬라이드 프롬프트</h1>
+    <p class="muted">{templates.length}가지 고유한 디자인 스타일 — 클릭하면 프롬프트를 복사할 수 있습니다.</p>
+  </section>
+
+  <!-- Search -->
+  <div class="tpl-search-wrap">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" id="tpl-search" placeholder="템플릿 검색..." />
+  </div>
+
+  <!-- Filters -->
+  <div class="tpl-filters">
+    <button class="tpl-filter-btn active" data-cat="전체">전체 {templates.length}</button>
+    {categories.map((c) => (
+      <button class="tpl-filter-btn" data-cat={c.name}>{c.name} {c.count}</button>
+    ))}
+  </div>
+
+  <!-- Grid -->
+  <div class="tpl-grid" id="tpl-grid">
+    {templates.map((t) => (
+      <article
+        class="tpl-card"
+        data-category={t.category}
+        data-name={t.name}
+        data-prompt={t.prompt}
+        data-bg={t.colors.background}
+        data-text={t.colors.text}
+        data-accent={t.colors.accent}
+        data-font={t.font}
+        data-mood={t.mood}
+        data-features={t.features.join(' | ')}
+        data-texture={t.texture}
+        data-layout={t.layout}
+      >
+        <div class="tpl-card-preview">
+          <Fragment set:html={t.previewHTML} />
+        </div>
+        <div class="tpl-card-info">
+          <h3>{t.name}</h3>
+          <p>{t.category}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <!-- Modal -->
+  <div class="tpl-modal-overlay" id="tpl-modal">
+    <div class="tpl-modal">
+      <div class="tpl-modal-header">
+        <div>
+          <h2 id="tpl-modal-name"></h2>
+          <span class="muted" id="tpl-modal-category"></span>
+        </div>
+        <button class="tpl-modal-close" id="tpl-modal-close" aria-label="닫기">&times; 닫기</button>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tpl-modal-tabs">
+        <button class="tpl-modal-tab active" data-tab="prompt">프롬프트 보기</button>
+        <button class="tpl-modal-tab" data-tab="workflow">워크플로우</button>
+      </div>
+
+      <!-- Tab 1: Original prompt view -->
+      <div class="tpl-tab-content active" id="tpl-tab-prompt">
+        <div class="tpl-modal-colors" id="tpl-modal-colors"></div>
+        <pre class="tpl-modal-prompt" id="tpl-modal-prompt"></pre>
+        <button class="tpl-modal-copy" id="tpl-modal-copy">프롬프트 복사</button>
+      </div>
+
+      <!-- Tab 2: Workflow wizard -->
+      <div class="tpl-tab-content" id="tpl-tab-workflow">
+        <!-- Step indicator -->
+        <div class="wf-steps" id="wf-steps">
+          <div class="wf-step active" data-step="1">1</div>
+          <div class="wf-step-line"></div>
+          <div class="wf-step" data-step="2">2</div>
+          <div class="wf-step-line"></div>
+          <div class="wf-step" data-step="3">3</div>
+          <div class="wf-step-line"></div>
+          <div class="wf-step" data-step="4">4</div>
+          <div class="wf-step-line"></div>
+          <div class="wf-step" data-step="5">5</div>
+        </div>
+
+        <!-- Step 1: Business type -->
+        <div class="wf-panel" id="wf-step1">
+          <h3 class="wf-title">어떤 업무에 사용하시나요?</h3>
+          <div class="wf-types" id="wf-types"></div>
+        </div>
+
+        <!-- Step 2: Form -->
+        <div class="wf-panel" id="wf-step2" style="display:none">
+          <h3 class="wf-title" id="wf-form-title"></h3>
+          <div class="wf-form" id="wf-form"></div>
+          <div class="wf-nav">
+            <button class="wf-btn-back" id="wf-back2">&larr; 이전</button>
+            <button class="wf-btn-next" id="wf-next2">다음 &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Source preparation -->
+        <div class="wf-panel" id="wf-step3" style="display:none">
+          <h3 class="wf-title">소스 문서 준비</h3>
+          <p class="wf-source-desc">
+            NotebookLM은 <strong>소스(참고 자료)</strong>를 기반으로 슬라이드를 만듭니다.<br/>
+            아래 프롬프트를 <strong>ChatGPT, Gemini, 또는 Claude</strong>에 붙여넣어 소스 문서를 생성하세요.
+          </p>
+
+          <div class="wf-source-prompt-wrap">
+            <div class="wf-source-label">소스 생성 프롬프트</div>
+            <div class="wf-prompt-preview" id="wf-source-prompt"></div>
+            <button class="wf-btn-next wf-btn-copy" id="wf-copy-source" style="width:100%;margin-top:8px">소스 프롬프트 복사</button>
+          </div>
+
+          <div class="wf-source-guide">
+            <h4>생성된 소스 문서를 NotebookLM에 넣는 법</h4>
+            <div class="wf-source-options">
+              <div class="wf-source-option">
+                <strong>방법 1: 텍스트 직접 입력</strong>
+                <ol>
+                  <li>AI가 생성한 문서 내용을 복사</li>
+                  <li>NotebookLM &rarr; "소스 추가"</li>
+                  <li>"복사한 텍스트" 선택 &rarr; 붙여넣기</li>
+                  <li>저장</li>
+                </ol>
+              </div>
+              <div class="wf-source-option">
+                <strong>방법 2: 파일로 업로드</strong>
+                <ol>
+                  <li>생성한 문서를 Google Docs 또는 Word로 저장</li>
+                  <li>NotebookLM &rarr; "소스 추가"</li>
+                  <li>"Google Drive" 또는 "파일 업로드" 선택</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="wf-tip" id="wf-notebook-tip">
+            꿀팁: 업무별 전용 노트북을 만들어두세요! (예: "아침조회" 노트북, "주간미팅" 노트북)<br/>
+            &rarr; 매번 새로 만들 필요 없이, 소스만 업데이트하면 슬라이드를 바로 생성할 수 있습니다.
+          </div>
+
+          <div class="wf-nav">
+            <button class="wf-btn-back" id="wf-back3">&larr; 이전</button>
+            <button class="wf-btn-next" id="wf-next3">다음 &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Combined prompt preview -->
+        <div class="wf-panel" id="wf-step4" style="display:none">
+          <h3 class="wf-title">완성된 슬라이드 프롬프트</h3>
+          <div class="wf-prompt-preview" id="wf-prompt-preview"></div>
+          <div class="wf-nav">
+            <button class="wf-btn-back" id="wf-back4">&larr; 이전</button>
+            <button class="wf-btn-next wf-btn-copy" id="wf-copy4">프롬프트 복사</button>
+            <button class="wf-btn-next" id="wf-next4">다음 &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 5: Tool guide -->
+        <div class="wf-panel" id="wf-step5" style="display:none">
+          <h3 class="wf-title">이제 슬라이드를 만들어보세요!</h3>
+          <div class="wf-guide-cards">
+            <div class="wf-guide-card">
+              <h4>NotebookLM</h4>
+              <ol>
+                <li>NotebookLM 열기</li>
+                <li>업무별 노트북 생성 (예: "주간미팅")</li>
+                <li>Step 3에서 만든 소스 문서 업로드</li>
+                <li>Studio &rarr; 슬라이드 클릭</li>
+                <li>&#9998; &rarr; Step 4 프롬프트 붙여넣기</li>
+                <li>슬라이드 생성 완료!</li>
+                <li>시각화 캡처 (Win+Shift+S / Cmd+Shift+4)</li>
+              </ol>
+              <a href="https://notebooklm.google.com/" target="_blank" rel="noopener" class="wf-link">NotebookLM 열기 &rarr;</a>
+            </div>
+            <div class="wf-guide-card">
+              <h4>Gamma AI</h4>
+              <ol>
+                <li>gamma.app 열기</li>
+                <li>"텍스트 붙여넣기" 선택</li>
+                <li>Step 4 프롬프트 붙여넣기</li>
+                <li>테마: UI에서 직접 선택 (프롬프트 무시됨)</li>
+                <li>이미지 설정: "일러스트"로 변경</li>
+                <li>생성 &rarr; PPTX로 내보내기</li>
+                <li>Canva에 업로드하여 편집</li>
+              </ol>
+              <a href="https://gamma.app/" target="_blank" rel="noopener" class="wf-link">Gamma AI 열기 &rarr;</a>
+            </div>
+            <div class="wf-guide-card">
+              <h4>Canva 최종 편집</h4>
+              <ol>
+                <li>Gamma PPTX 또는 기존 PPT 업로드</li>
+                <li>NotebookLM 시각화 캡처 이미지 삽입</li>
+                <li>Magic Write로 텍스트 보강</li>
+                <li>레이아웃 최종 편집</li>
+                <li>PPTX로 다운로드</li>
+              </ol>
+              <a href="https://www.canva.com/" target="_blank" rel="noopener" class="wf-link">Canva 열기 &rarr;</a>
+            </div>
+          </div>
+          <div class="wf-tip">추천 워크플로우: 소스 문서 생성 (ChatGPT/Gemini) &rarr; NotebookLM 소스 업로드 &rarr; 슬라이드 생성 &rarr; 시각화 캡처 &rarr; Canva에서 최종 편집!</div>
+          <div class="wf-nav">
+            <button class="wf-btn-back" id="wf-back5">&larr; 이전</button>
+            <button class="wf-btn-next" id="wf-done">완료</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  // ── Filter ───────────────────────────────────────────────────────────────
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.tpl-filter-btn');
+  const cards = document.querySelectorAll<HTMLElement>('.tpl-card');
+  const searchInput = document.getElementById('tpl-search') as HTMLInputElement;
+  let activeCat = '전체';
+
+  function applyFilter() {
+    const query = searchInput.value.toLowerCase();
+    cards.forEach((card) => {
+      const name = (card.dataset.name || '').toLowerCase();
+      const cat = card.dataset.category || '';
+      const matchCat = activeCat === '전체' || cat === activeCat;
+      const matchSearch = !query || name.includes(query) || cat.toLowerCase().includes(query);
+      (card as HTMLElement).style.display = matchCat && matchSearch ? '' : 'none';
+    });
+  }
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeCat = btn.dataset.cat || '전체';
+      applyFilter();
+    });
+  });
+
+  searchInput.addEventListener('input', applyFilter);
+
+  // ── Modal elements ────────────────────────────────────────────────────────
+  const modal = document.getElementById('tpl-modal')!;
+  const modalName = document.getElementById('tpl-modal-name')!;
+  const modalCategory = document.getElementById('tpl-modal-category')!;
+  const modalColors = document.getElementById('tpl-modal-colors')!;
+  const modalPrompt = document.getElementById('tpl-modal-prompt')!;
+  const modalCopy = document.getElementById('tpl-modal-copy') as HTMLButtonElement;
+  const modalClose = document.getElementById('tpl-modal-close')!;
+
+  let currentPrompt = '';
+  let currentTemplateName = '';
+
+  // ── Tab switching ─────────────────────────────────────────────────────────
+  const tabBtns = document.querySelectorAll<HTMLButtonElement>('.tpl-modal-tab');
+  const tabContents = document.querySelectorAll<HTMLElement>('.tpl-tab-content');
+
+  tabBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach((b) => b.classList.remove('active'));
+      tabContents.forEach((c) => c.classList.remove('active'));
+      btn.classList.add('active');
+      const targetId = 'tpl-tab-' + btn.dataset.tab;
+      document.getElementById(targetId)?.classList.add('active');
+    });
+  });
+
+  // ── Modal open/close ──────────────────────────────────────────────────────
+  cards.forEach((card) => {
+    card.addEventListener('click', () => {
+      const d = card.dataset;
+      currentTemplateName = d.name || '';
+      modalName.textContent = currentTemplateName;
+      modalCategory.textContent = d.category || '';
+      currentPrompt = d.prompt || '';
+      modalPrompt.textContent = currentPrompt;
+
+      modalColors.innerHTML = [
+        { label: '배경', color: d.bg },
+        { label: '텍스트', color: d.text },
+        { label: '강조', color: d.accent },
+      ]
+        .map(
+          (c) =>
+            `<div class="tpl-color-chip"><span style="background:${c.color}"></span>${c.label}<br/><small>${c.color}</small></div>`
+        )
+        .join('');
+
+      // Reset tabs to prompt view
+      tabBtns.forEach((b) => b.classList.remove('active'));
+      tabContents.forEach((c) => c.classList.remove('active'));
+      document.querySelector<HTMLButtonElement>('.tpl-modal-tab[data-tab="prompt"]')?.classList.add('active');
+      document.getElementById('tpl-tab-prompt')?.classList.add('active');
+
+      // Reset wizard
+      resetWizard();
+
+      modal.classList.add('open');
+      modalCopy.textContent = '프롬프트 복사';
+      modalCopy.classList.remove('copied');
+    });
+  });
+
+  modalClose.addEventListener('click', () => modal.classList.remove('open'));
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.remove('open');
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') modal.classList.remove('open');
+  });
+
+  modalCopy.addEventListener('click', async () => {
+    await navigator.clipboard.writeText(currentPrompt);
+    modalCopy.textContent = '복사됨!';
+    modalCopy.classList.add('copied');
+    setTimeout(() => {
+      modalCopy.textContent = '프롬프트 복사';
+      modalCopy.classList.remove('copied');
+    }, 2000);
+  });
+
+  // ── Workflow wizard data ──────────────────────────────────────────────────
+  const workflows: Record<string, {
+    name: string;
+    icon: string;
+    fields: Array<{ id: string; label: string; placeholder: string; type?: string }>;
+    template: string;
+    sourceTemplate: string;
+  }> = {
+    weekly: {
+      name: '주간 미팅', icon: '📊',
+      fields: [
+        { id: 'performance', label: '이번 주 실적', placeholder: '상담 45건, 제안 12건, 체결 3건' },
+        { id: 'comparison', label: '지난주 대비', placeholder: '상담 +20%, 체결 -1건' },
+        { id: 'issue', label: '핵심 이슈', placeholder: '신상품 A 출시 2주차, 고객 반응 양호' },
+        { id: 'nextGoal', label: '다음 주 목표', placeholder: '체결 5건, 신규 상담 50건 목표' }
+      ],
+      template: '보험 영업 팀장으로서 주간 미팅 보고 슬라이드를 만들어주세요.\n\n[주간 실적]\n이번 주: {{performance}}\n지난주 대비: {{comparison}}\n\n[핵심 이슈]\n{{issue}}\n\n[다음 주 목표]\n{{nextGoal}}\n\n각 슬라이드에 핵심 포인트 3개 이하로 정리하고, 실적은 시각적 차트로 표현해주세요.',
+      sourceTemplate: '보험 영업 팀장이 주간 팀 미팅에서 발표할 보고 자료의 소스 문서를 작성해주세요.\n\n아래 정보를 바탕으로 2~3페이지 분량의 상세 보고서를 작성해주세요.\n이 문서는 NotebookLM에 업로드하여 시각적 슬라이드를 생성하는 데 사용됩니다.\n\n[주간 실적 데이터]\n• 이번 주 실적: {{performance}}\n• 지난주 대비 변화: {{comparison}}\n\n[핵심 이슈]\n{{issue}}\n\n[다음 주 목표]\n{{nextGoal}}\n\n다음 내용을 반드시 포함해주세요:\n1. 주간 실적 요약표 (숫자 데이터 포함)\n2. 전주 대비 증감 분석\n3. 핵심 이슈에 대한 상세 설명과 대응 방안\n4. 다음 주 목표와 실행 계획\n5. 팀원별 액션 아이템 (예시)\n\n문서 형식: 보고서 스타일, 제목과 소제목 구분, 글머리 기호 활용'
+    },
+    training: {
+      name: '신상품 교육', icon: '📚',
+      fields: [
+        { id: 'productName', label: '상품명', placeholder: '메트라이프 종신보험 플러스' },
+        { id: 'target', label: '교육 대상', placeholder: '신입 FC 3명, 경력 6개월 미만' },
+        { id: 'features', label: '핵심 특징', placeholder: '무해약환급형, 납입면제, 3대질병 보장', type: 'textarea' },
+        { id: 'competitor', label: '경쟁사 비교 포인트', placeholder: '삼성생명 대비 보험료 10% 저렴', type: 'textarea' }
+      ],
+      template: '보험 영업 팀장으로서 팀원 교육용 슬라이드를 만들어주세요.\n\n[상품 정보]\n상품명: {{productName}}\n교육 대상: {{target}}\n\n[핵심 특징]\n{{features}}\n\n[경쟁사 비교]\n{{competitor}}\n\n구성: 표지 → 왜 이 상품인가 → 핵심 특징 (3장) → 경쟁사 비교 → 추천 화법 → Q&A',
+      sourceTemplate: '보험 영업 팀장이 팀원(FC)에게 신상품을 교육하기 위한 소스 문서를 작성해주세요.\n\n아래 정보를 바탕으로 3~4페이지 분량의 교육 자료를 작성해주세요.\n이 문서는 NotebookLM에 업로드하여 교육용 슬라이드를 생성하는 데 사용됩니다.\n\n[상품 정보]\n• 상품명: {{productName}}\n• 교육 대상: {{target}}\n\n[핵심 특징]\n{{features}}\n\n[경쟁사 비교]\n{{competitor}}\n\n다음 내용을 반드시 포함해주세요:\n1. 상품 개요 및 출시 배경\n2. 핵심 보장 내용 (보장금액, 보험료, 특약 포함)\n3. 가입 조건 및 심사 기준\n4. 경쟁사 상품과의 상세 비교표\n5. 고객 상담 시 추천 화법 (3가지 이상)\n6. 예상 Q&A (5개 이상)\n7. 타겟 고객 프로필 및 접근 전략\n\n문서 형식: 교육 자료 스타일, 표와 비교 차트 데이터 포함'
+    },
+    recruiting: {
+      name: '리크루팅', icon: '🤝',
+      fields: [
+        { id: 'targetAudience', label: '대상', placeholder: '30-40대 이직 희망 직장인' },
+        { id: 'income', label: '수입 구조', placeholder: '초기 정착지원금 + 수수료, 1년차 평균 4,000만원' },
+        { id: 'careerPath', label: '경력 경로', placeholder: 'FC → 수석 FC → 팀장 → 지점장' },
+        { id: 'successStory', label: '성공 사례', placeholder: '김OO 팀장: 입사 3년차, 연봉 1.2억' }
+      ],
+      template: '보험 영업 팀장으로서 설계사 채용 설명회 슬라이드를 만들어주세요.\n\n[대상]\n{{targetAudience}}\n\n[수입 구조]\n{{income}}\n\n[경력 경로]\n{{careerPath}}\n\n[성공 사례]\n{{successStory}}\n\n구성: 표지 → 보험설계사란? → 수입 구조 → 경력 경로 → 교육/지원 시스템 → 성공 사례 → 지원 방법',
+      sourceTemplate: '보험 영업 팀장이 설계사 채용 설명회에서 사용할 소스 문서를 작성해주세요.\n\n아래 정보를 바탕으로 3~4페이지 분량의 채용 소개 자료를 작성해주세요.\n이 문서는 NotebookLM에 업로드하여 설명회 슬라이드를 생성하는 데 사용됩니다.\n\n[채용 대상]\n{{targetAudience}}\n\n[수입 구조]\n{{income}}\n\n[경력 경로]\n{{careerPath}}\n\n[성공 사례]\n{{successStory}}\n\n다음 내용을 반드시 포함해주세요:\n1. 보험설계사(FC) 직업 소개 및 비전\n2. 회사 소개 및 강점\n3. 수입 구조 상세 설명 (정착지원금, 수수료 체계, 인센티브)\n4. 연차별 예상 수입 테이블\n5. 경력 성장 경로와 각 단계별 역할\n6. 교육 및 지원 시스템 설명\n7. 실제 성공 사례 스토리 (상세)\n8. 지원 자격 및 프로세스\n\n문서 형식: 매력적이고 전문적인 톤, 구체적인 숫자와 사례 포함'
+    },
+    proposal: {
+      name: '고객 제안서', icon: '💼',
+      fields: [
+        { id: 'clientName', label: '고객명', placeholder: '홍길동' },
+        { id: 'clientInfo', label: '고객 정보', placeholder: '42세 남성, 기혼, 자녀 2명, 직장인' },
+        { id: 'currentInsurance', label: '현재 보유 보험', placeholder: '실손보험, 자동차보험만 보유' },
+        { id: 'recommendation', label: '추천 상품', placeholder: '종신보험 + CI보험 조합, 월 15만원' }
+      ],
+      template: '보험 영업 팀장으로서 고객 맞춤 보장분석 제안서 슬라이드를 만들어주세요.\n\n[고객 정보]\n고객명: {{clientName}}\n프로필: {{clientInfo}}\n\n[현재 보장 현황]\n{{currentInsurance}}\n\n[추천 상품]\n{{recommendation}}\n\n구성: 표지 → 현재 상황 → 보장 갭 분석 → 추천 솔루션 → 보장 비교표 → 예상 보험료 → 다음 단계',
+      sourceTemplate: '보험 영업 팀장이 개별 고객에게 맞춤형 보장분석을 제안하기 위한 소스 문서를 작성해주세요.\n\n아래 정보를 바탕으로 2~3페이지 분량의 보장분석 보고서를 작성해주세요.\n이 문서는 NotebookLM에 업로드하여 제안서 슬라이드를 생성하는 데 사용됩니다.\n\n[고객 정보]\n• 고객명: {{clientName}}\n• 프로필: {{clientInfo}}\n\n[현재 보유 보험]\n{{currentInsurance}}\n\n[추천 상품]\n{{recommendation}}\n\n다음 내용을 반드시 포함해주세요:\n1. 고객 프로필 요약 (가족 구성, 직업, 재무 상황)\n2. 현재 보장 현황 분석\n3. 보장 갭(Gap) 분석 — 부족한 보장 영역 명시\n4. 추천 보장 솔루션 상세 (상품명, 보장내용, 보험료)\n5. 현재 vs 추천 보장 비교표\n6. 월 예상 보험료 및 납입 계획\n7. 다음 단계 안내\n\n문서 형식: 고객 눈높이의 쉬운 용어, 비교표와 수치 데이터 포함'
+    },
+    morning: {
+      name: '아침 조회', icon: '☀️',
+      fields: [
+        { id: 'date', label: '날짜', placeholder: '2026년 3월 17일 (월)' },
+        { id: 'yesterdayResult', label: '어제 실적', placeholder: '상담 8건, 제안 2건, 체결 1건' },
+        { id: 'todayGoal', label: '오늘 목표', placeholder: '상담 10건, 제안 3건 목표' },
+        { id: 'motivation', label: '동기부여 메시지 (선택)', placeholder: '이번 주 MVP: 박OO FC, 체결 3건 달성!' }
+      ],
+      template: '보험 영업 팀장으로서 아침 조회 브리핑 슬라이드 5장을 만들어주세요.\n\n[날짜]\n{{date}}\n\n[어제 실적]\n{{yesterdayResult}}\n\n[오늘 목표]\n{{todayGoal}}\n\n[동기부여]\n{{motivation}}\n\n구성: 인사/오늘 날짜 → 어제 실적 요약 → 오늘 목표 → 공지사항 → 화이팅 메시지',
+      sourceTemplate: '보험 영업 팀장이 매일 아침 팀 조회에서 사용할 소스 문서를 작성해주세요.\n\n아래 정보를 바탕으로 1~2페이지 분량의 브리핑 자료를 작성해주세요.\n이 문서는 NotebookLM에 업로드하여 아침 조회 슬라이드를 생성하는 데 사용됩니다.\n\n[날짜]\n{{date}}\n\n[어제 실적]\n{{yesterdayResult}}\n\n[오늘 목표]\n{{todayGoal}}\n\n[동기부여 / 공지사항]\n{{motivation}}\n\n다음 내용을 반드시 포함해주세요:\n1. 인사말 및 오늘 날짜/요일\n2. 어제 팀 실적 요약 (숫자 데이터)\n3. 목표 대비 달성률\n4. 오늘의 목표와 중점 과제\n5. 팀 공지사항 및 일정\n6. 동기부여 메시지 또는 우수 사례\n7. 오늘의 한마디 (에너지 넘치는 메시지)\n\n문서 형식: 짧고 핵심적, 에너지 넘치는 톤, 숫자 강조'
+    },
+    monthly: {
+      name: '실적 보고', icon: '📈',
+      fields: [
+        { id: 'period', label: '보고 기간', placeholder: '2026년 3월' },
+        { id: 'achievement', label: '목표 대비 달성', placeholder: '목표 50건 중 38건 달성 (76%)' },
+        { id: 'topPerformers', label: '우수 성과자', placeholder: '1위 김OO (12건), 2위 이OO (9건), 3위 박OO (7건)' },
+        { id: 'nextStrategy', label: '다음 달 전략', placeholder: '신규 DB 확보, 기존 고객 리텐션 강화', type: 'textarea' }
+      ],
+      template: '보험 영업 팀장으로서 실적 보고 슬라이드를 만들어주세요.\n\n[보고 기간]\n{{period}}\n\n[실적 요약]\n{{achievement}}\n\n[우수 성과자]\n{{topPerformers}}\n\n[다음 달 전략]\n{{nextStrategy}}\n\n구성: 표지 → 월간 실적 요약 → KPI 대시보드 → 개인별 성과 → 우수 사례 → 다음 달 목표/전략',
+      sourceTemplate: '보험 영업 팀장이 월간 실적을 보고하기 위한 소스 문서를 작성해주세요.\n\n아래 정보를 바탕으로 3~4페이지 분량의 실적 보고서를 작성해주세요.\n이 문서는 NotebookLM에 업로드하여 보고 슬라이드를 생성하는 데 사용됩니다.\n\n[보고 기간]\n{{period}}\n\n[실적 요약]\n{{achievement}}\n\n[우수 성과자]\n{{topPerformers}}\n\n[다음 달 전략]\n{{nextStrategy}}\n\n다음 내용을 반드시 포함해주세요:\n1. 보고 기간 개요\n2. 핵심 KPI 달성 현황 (목표 vs 실적, 달성률)\n3. 전월 대비 증감 분석\n4. 상품별 실적 분석\n5. 개인별 성과 순위 및 상세\n6. 우수 성과자 사례 (성공 요인 분석)\n7. 미달 영역 분석 및 개선 방안\n8. 다음 달 목표 및 전략\n\n문서 형식: 경영진 보고에 적합한 전문적 톤, 데이터 테이블과 수치 강조'
+    }
+  };
+
+  // ── Wizard state ──────────────────────────────────────────────────────────
+  let currentStep = 1;
+  let selectedWorkflow = '';
+  let combinedPrompt = '';
+  let sourcePrompt = '';
+
+  function resetWizard() {
+    currentStep = 1;
+    selectedWorkflow = '';
+    combinedPrompt = '';
+    sourcePrompt = '';
+    showStep(1);
+    renderTypeButtons();
+  }
+
+  function showStep(step: number) {
+    currentStep = step;
+    for (let i = 1; i <= 5; i++) {
+      const panel = document.getElementById(`wf-step${i}`);
+      if (panel) panel.style.display = i === step ? '' : 'none';
+    }
+    document.querySelectorAll<HTMLElement>('.wf-step').forEach((el) => {
+      const s = parseInt(el.dataset.step || '0');
+      el.classList.remove('active', 'completed');
+      if (s === step) el.classList.add('active');
+      else if (s < step) el.classList.add('completed');
+    });
+  }
+
+  // ── Step 1: type buttons ──────────────────────────────────────────────────
+  function renderTypeButtons() {
+    const container = document.getElementById('wf-types')!;
+    const order = ['weekly', 'training', 'recruiting', 'proposal', 'morning', 'monthly'];
+    container.innerHTML = order.map((key) => {
+      const wf = workflows[key];
+      return `<button class="wf-type-btn" data-wf="${key}">
+        <span class="wf-type-icon">${wf.icon}</span>
+        <span class="wf-type-name">${wf.name}</span>
+      </button>`;
+    }).join('');
+
+    container.querySelectorAll<HTMLButtonElement>('.wf-type-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        selectedWorkflow = btn.dataset.wf || '';
+        renderFormStep();
+        showStep(2);
+      });
+    });
+  }
+
+  // ── Step 2: form ──────────────────────────────────────────────────────────
+  function renderFormStep() {
+    const wf = workflows[selectedWorkflow];
+    if (!wf) return;
+    const titleEl = document.getElementById('wf-form-title')!;
+    titleEl.textContent = `${wf.icon} ${wf.name} — 내용을 채워주세요`;
+
+    const formEl = document.getElementById('wf-form')!;
+    formEl.innerHTML = wf.fields.map((field) => {
+      const isTextarea = field.type === 'textarea';
+      const inputHtml = isTextarea
+        ? `<textarea id="wf-field-${field.id}" placeholder="${field.placeholder}"></textarea>`
+        : `<input type="text" id="wf-field-${field.id}" placeholder="${field.placeholder}" />`;
+      return `<div class="wf-field">
+        <label for="wf-field-${field.id}">${field.label}</label>
+        ${inputHtml}
+      </div>`;
+    }).join('');
+  }
+
+  // ── Step 3: source prompt ─────────────────────────────────────────────────
+  function buildSourcePrompt(): string {
+    const wf = workflows[selectedWorkflow];
+    if (!wf) return '';
+    let filled = wf.sourceTemplate;
+    wf.fields.forEach((field) => {
+      const el = document.getElementById(`wf-field-${field.id}`) as HTMLInputElement | HTMLTextAreaElement | null;
+      const val = el?.value.trim() || el?.getAttribute('placeholder') || '';
+      filled = filled.split(`{{${field.id}}}`).join(val);
+    });
+    return filled;
+  }
+
+  function renderSourceStep() {
+    sourcePrompt = buildSourcePrompt();
+    const preview = document.getElementById('wf-source-prompt')!;
+    preview.textContent = sourcePrompt;
+  }
+
+  // ── Step 4: combined prompt ───────────────────────────────────────────────
+  function buildCombinedPrompt(): string {
+    const wf = workflows[selectedWorkflow];
+    if (!wf) return '';
+
+    let filled = wf.template;
+    wf.fields.forEach((field) => {
+      const el = document.getElementById(`wf-field-${field.id}`) as HTMLInputElement | HTMLTextAreaElement | null;
+      const val = el?.value.trim() || el?.getAttribute('placeholder') || '';
+      filled = filled.split(`{{${field.id}}}`).join(val);
+    });
+
+    return `[디자인 스타일: ${currentTemplateName}]\n${currentPrompt}\n\n━━━━━━━━━━━━━━━━━━━━━━\n\n[업무: ${wf.name}]\n${filled}`;
+  }
+
+  function renderPromptPreview() {
+    combinedPrompt = buildCombinedPrompt();
+    const preview = document.getElementById('wf-prompt-preview')!;
+    preview.textContent = combinedPrompt;
+  }
+
+  // ── Step navigation wiring ────────────────────────────────────────────────
+  document.getElementById('wf-back2')!.addEventListener('click', () => showStep(1));
+  document.getElementById('wf-next2')!.addEventListener('click', () => {
+    renderSourceStep();
+    showStep(3);
+  });
+
+  document.getElementById('wf-back3')!.addEventListener('click', () => showStep(2));
+  document.getElementById('wf-copy-source')!.addEventListener('click', async () => {
+    const btn = document.getElementById('wf-copy-source') as HTMLButtonElement;
+    await navigator.clipboard.writeText(sourcePrompt);
+    btn.textContent = '복사됨!';
+    setTimeout(() => { btn.textContent = '소스 프롬프트 복사'; }, 2000);
+  });
+  document.getElementById('wf-next3')!.addEventListener('click', () => {
+    renderPromptPreview();
+    showStep(4);
+  });
+
+  document.getElementById('wf-back4')!.addEventListener('click', () => showStep(3));
+  document.getElementById('wf-copy4')!.addEventListener('click', async () => {
+    const btn = document.getElementById('wf-copy4') as HTMLButtonElement;
+    await navigator.clipboard.writeText(combinedPrompt);
+    btn.textContent = '복사됨!';
+    setTimeout(() => { btn.textContent = '프롬프트 복사'; }, 2000);
+  });
+  document.getElementById('wf-next4')!.addEventListener('click', () => showStep(5));
+
+  document.getElementById('wf-back5')!.addEventListener('click', () => showStep(4));
+  document.getElementById('wf-done')!.addEventListener('click', () => modal.classList.remove('open'));
+</script>

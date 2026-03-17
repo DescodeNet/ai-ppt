@@ -8,7 +8,8 @@
     "preview": "astro preview --host 0.0.0.0 --port 4321",
     "typecheck": "astro check",
     "test": "playwright test",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "build:templates": "node scripts/build-data.mjs && node scripts/merge-previews.mjs"
   },
   "keywords": [
     "astro",
