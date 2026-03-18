@@ -333,17 +333,19 @@ const categories = categoryOrder
       resetWizard();
 
       modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
       modalCopy.textContent = '프롬프트 복사';
       modalCopy.classList.remove('copied');
     });
   });
 
-  modalClose.addEventListener('click', () => modal.classList.remove('open'));
+  function closeModal() { modal.classList.remove('open'); document.body.style.overflow = ''; }
+  modalClose.addEventListener('click', closeModal);
   modal.addEventListener('click', (e) => {
-    if (e.target === modal) modal.classList.remove('open');
+    if (e.target === modal) closeModal();
   });
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') modal.classList.remove('open');
+    if (e.key === 'Escape') closeModal();
   });
 
   modalCopy.addEventListener('click', async () => {
@@ -571,5 +573,5 @@ const categories = categoryOrder
   document.getElementById('wf-next4')!.addEventListener('click', () => showStep(5));
 
   document.getElementById('wf-back5')!.addEventListener('click', () => showStep(4));
-  document.getElementById('wf-done')!.addEventListener('click', () => modal.classList.remove('open'));
+  document.getElementById('wf-done')!.addEventListener('click', closeModal);
 </script>
